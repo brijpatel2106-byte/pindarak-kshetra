@@ -11,10 +11,10 @@ export const PujariPage = ({ onOpenBooking }) => {
       <div className="container" style={{ maxWidth: '1080px' }}>
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
-          gap: '4rem',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
+          gap: '2.5rem',
           alignItems: 'flex-start',
-          marginBottom: '4rem'
+          marginBottom: '3rem'
         }}>
           {/* Left Column: Curved Arch Portrait with Glow Halo */}
           <div>
@@ -23,7 +23,7 @@ export const PujariPage = ({ onOpenBooking }) => {
                 <img 
                   src={pujariProfile.image} 
                   alt={getMultilingualText(pujariProfile.name)} 
-                  style={{ width: '100%', height: '520px', objectFit: 'cover' }} 
+                  style={{ width: '100%', maxHeight: '480px', objectFit: 'cover' }} 
                 />
               </div>
             </div>

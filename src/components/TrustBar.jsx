@@ -38,8 +38,8 @@ export const TrustBar = () => {
       <div className="container">
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-          gap: '1.5rem',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))',
+          gap: '1.2rem',
           alignItems: 'center'
         }}>
           {metrics.map((m, idx) => (

@@ -92,16 +92,16 @@ export const HomePage = ({ setActivePage, onSelectDetail, onOpenBooking, onSelec
         <div className="container">
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
-            gap: '4rem',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))',
+            gap: '2.5rem',
             alignItems: 'center'
           }}>
             <div>
               <span className="badge-tag">{t('nav_about')}</span>
-              <h2 style={{ marginBottom: '1.4rem', fontSize: '2.5rem' }}>
+              <h2 style={{ marginBottom: '1.4rem', fontSize: 'clamp(1.8rem, 4vw, 2.5rem)' }}>
                 Preserving Ancient Vedic Sanctity at Pindarak Kshetra
               </h2>
-              <p style={{ fontSize: '1.12rem', marginBottom: '1.4rem', lineHeight: '1.8' }}>
+              <p style={{ fontSize: '1.05rem', marginBottom: '1.4rem', lineHeight: '1.8' }}>
                 Pindarak Kshetra has been revered for centuries as a sacred ocean coast pilgrimage for Pitru Tarpan, Narayan Nagbali, and Sarpa Shanti rituals.
               </p>
               <p style={{ marginBottom: '2rem', lineHeight: '1.8' }}>
@@ -119,29 +119,32 @@ export const HomePage = ({ setActivePage, onSelectDetail, onOpenBooking, onSelec
                 borderRadius: 'var(--radius-arch)',
                 overflow: 'hidden',
                 boxShadow: 'var(--shadow-lg)',
-                border: '6px solid #FFF'
+                border: '6px solid #FFF',
+                maxWidth: '100%'
               }}>
-                <img src="/images/narayan_nagbali.jpg?v=2" alt="Pindarak Temple Ceremony" style={{ width: '100%', height: '420px', objectFit: 'cover' }} />
+                <img src="/images/narayan_nagbali.jpg?v=2" alt="Pindarak Temple Ceremony" style={{ width: '100%', maxHeight: '420px', objectFit: 'cover' }} />
               </div>
 
               <div className="floating-pill" style={{
-                position: 'absolute',
-                bottom: '-1.5rem',
-                left: '-1rem',
+                position: 'relative',
+                marginTop: '-2rem',
+                left: '0',
                 backgroundColor: 'var(--secondary-maroon)',
                 color: '#FFF',
-                padding: '1.4rem 2rem',
+                padding: '1.2rem 1.5rem',
                 borderRadius: 'var(--radius-lg)',
                 boxShadow: 'var(--shadow-lg)',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '1.2rem',
-                border: '2px solid var(--accent-gold)'
+                gap: '1rem',
+                border: '2px solid var(--accent-gold)',
+                maxWidth: '100%',
+                boxSizing: 'border-box'
               }}>
-                <ShieldCheck size={36} style={{ color: 'var(--accent-gold)', flexShrink: 0 }} />
+                <ShieldCheck size={32} style={{ color: 'var(--accent-gold)', flexShrink: 0 }} />
                 <div>
-                  <div style={{ fontWeight: 800, fontSize: '1.15rem' }}>100% Shastras Tradition</div>
-                  <div style={{ fontSize: '0.88rem', color: 'var(--accent-gold)', fontWeight: 600 }}>Hereditary Gujarati Brahmin Lineage</div>
+                  <div style={{ fontWeight: 800, fontSize: '1.05rem' }}>100% Shastras Tradition</div>
+                  <div style={{ fontSize: '0.85rem', color: 'var(--accent-gold)', fontWeight: 600 }}>Hereditary Gujarati Brahmin Lineage</div>
                 </div>
               </div>
             </div>
@@ -160,8 +163,8 @@ export const HomePage = ({ setActivePage, onSelectDetail, onOpenBooking, onSelec
 
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(330px, 1fr))',
-            gap: '2.2rem',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
+            gap: '2rem',
             marginBottom: '3.5rem'
           }}>
             {ritualsData.slice(0, 3).map(ritual => (
@@ -202,7 +205,7 @@ export const HomePage = ({ setActivePage, onSelectDetail, onOpenBooking, onSelec
                 className="card card-hover"
                 style={{ padding: 0, overflow: 'hidden', cursor: 'pointer', borderRadius: 'var(--radius-xl)' }}
               >
-                <div style={{ height: '400px', position: 'relative', backgroundColor: '#000' }}>
+                <div style={{ minHeight: '240px', height: 'auto', maxHeight: '400px', position: 'relative', backgroundColor: '#000' }}>
                   {/* Real Ceremony Video Clip Preview */}
                   <video
                     autoPlay
@@ -211,7 +214,7 @@ export const HomePage = ({ setActivePage, onSelectDetail, onOpenBooking, onSelec
                     playsInline
                     preload="metadata"
                     poster={vid.thumbnail}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    style={{ width: '100%', maxHeight: '400px', objectFit: 'cover' }}
                   >
                     <source src={vid.videoUrl} type="video/mp4" />
                     <source src="/videos/moksh_tithi.mp4" type="video/mp4" />
@@ -228,8 +231,8 @@ export const HomePage = ({ setActivePage, onSelectDetail, onOpenBooking, onSelec
                     transition: 'background-color 200ms ease'
                   }}>
                     <div style={{
-                      width: '76px',
-                      height: '76px',
+                      width: '64px',
+                      height: '64px',
                       borderRadius: '50%',
                       backgroundColor: 'var(--primary-saffron)',
                       color: '#FFF',
@@ -238,26 +241,26 @@ export const HomePage = ({ setActivePage, onSelectDetail, onOpenBooking, onSelec
                       justifyContent: 'center',
                       boxShadow: '0 8px 26px rgba(216, 67, 21, 0.7)'
                     }}>
-                      <Play size={34} style={{ marginLeft: '4px' }} />
+                      <Play size={28} style={{ marginLeft: '4px' }} />
                     </div>
                   </div>
 
                   <span style={{
                     position: 'absolute',
-                    bottom: '1rem',
-                    right: '1rem',
+                    bottom: '0.75rem',
+                    right: '0.75rem',
                     backgroundColor: 'rgba(0,0,0,0.8)',
                     color: '#FFF',
-                    fontSize: '0.85rem',
+                    fontSize: '0.8rem',
                     fontWeight: 700,
-                    padding: '0.3rem 0.8rem',
+                    padding: '0.3rem 0.7rem',
                     borderRadius: 'var(--radius-full)'
                   }}>
                     Click for Fullscreen Player
                   </span>
                 </div>
-                <div style={{ padding: '2rem', textAlign: 'center' }}>
-                  <p style={{ fontSize: '1.15rem', fontWeight: 700, color: 'var(--secondary-maroon)', margin: 0, lineHeight: '1.7' }}>
+                <div style={{ padding: '1.25rem', textAlign: 'center' }}>
+                  <p style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--secondary-maroon)', margin: 0, lineHeight: '1.6' }}>
                     {vid.description}
                   </p>
                 </div>
@@ -284,8 +287,8 @@ export const HomePage = ({ setActivePage, onSelectDetail, onOpenBooking, onSelec
           <div className="editorial-hero-card">
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
-              gap: '4rem',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
+              gap: '2.5rem',
               alignItems: 'center'
             }}>
               <div style={{ textAlign: 'center', position: 'relative' }}>
@@ -294,25 +297,25 @@ export const HomePage = ({ setActivePage, onSelectDetail, onOpenBooking, onSelec
                     <img 
                       src={pujariProfile.image} 
                       alt={getMultilingualText(pujariProfile.name)} 
-                      style={{ width: '100%', height: '480px', objectFit: 'cover' }} 
+                      style={{ width: '100%', maxHeight: '480px', objectFit: 'cover' }} 
                     />
                   </div>
                 </div>
 
                 <div className="floating-pill" style={{
-                  position: 'absolute',
-                  bottom: '1rem',
-                  right: '10%',
+                  position: 'relative',
+                  marginTop: '-1.5rem',
+                  display: 'inline-flex',
                   backgroundColor: 'var(--primary-saffron)',
                   color: '#FFF',
-                  padding: '0.8rem 1.6rem',
+                  padding: '0.7rem 1.4rem',
                   borderRadius: 'var(--radius-full)',
                   boxShadow: 'var(--shadow-hover)',
                   fontWeight: 700,
-                  fontSize: '0.92rem',
-                  display: 'flex',
+                  fontSize: '0.88rem',
                   alignItems: 'center',
-                  gap: '0.5rem'
+                  gap: '0.5rem',
+                  maxWidth: '100%'
                 }}>
                   <Star size={16} fill="currentColor" /> 35+ Years Sacred Lineage
                 </div>
@@ -396,20 +399,20 @@ export const HomePage = ({ setActivePage, onSelectDetail, onOpenBooking, onSelec
         borderTop: '4px solid var(--accent-gold)',
         position: 'relative'
       }}>
-        <div className="container" style={{ maxWidth: '800px' }}>
+        <div className="container" style={{ maxWidth: '840px' }}>
           <h2 style={{ color: '#FFF', fontSize: '2.7rem', marginBottom: '1.2rem' }}>
             Ready to Schedule Your Sacred Ritual?
           </h2>
-          <p style={{ color: '#E2E8F0', fontSize: '1.2rem', marginBottom: '2.8rem', lineHeight: '1.8' }}>
-            Connect directly with Shastri Shri Rajeshbhai Joshi and secure your preferred ceremony date with peace of mind.
+          <p style={{ color: '#E2E8F0', fontSize: '1.2rem', marginBottom: '2.4rem', lineHeight: '1.8' }}>
+            Connect directly with <strong>Jitendrabhai Kantilal Thaker</strong> and secure your preferred ceremony date with peace of mind.
           </p>
-          <div style={{ display: 'flex', gap: '1.4rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '1.4rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
             <button onClick={onOpenBooking} className="btn btn-primary btn-lg">
               <Calendar size={22} />
               <span>{t('hero_cta_book')}</span>
             </button>
             <a 
-              href="https://wa.me/919879500000" 
+              href="https://wa.me/919979626659" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn btn-secondary btn-lg"
@@ -418,6 +421,40 @@ export const HomePage = ({ setActivePage, onSelectDetail, onOpenBooking, onSelec
               <MessageSquare size={22} />
               <span>WhatsApp Direct Chat</span>
             </a>
+          </div>
+
+          {/* Important Notice Box in CTA Section */}
+          <div style={{
+            backgroundColor: 'rgba(255, 255, 255, 0.12)',
+            border: '1px solid var(--accent-gold)',
+            borderRadius: 'var(--radius-lg)',
+            padding: '1.4rem 1.8rem',
+            textAlign: 'left',
+            backdropFilter: 'blur(6px)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '1.2rem'
+          }}>
+            <div style={{
+              width: '42px',
+              height: '42px',
+              borderRadius: '50%',
+              backgroundColor: 'var(--accent-gold)',
+              color: 'var(--secondary-maroon)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontWeight: 800,
+              flexShrink: 0
+            }}>
+              !
+            </div>
+            <div>
+              <h4 style={{ color: 'var(--accent-gold)', margin: '0 0 0.3rem 0', fontSize: '1.15rem' }}>Important Notice</h4>
+              <p style={{ color: '#F7FAFC', margin: 0, fontSize: '0.98rem', lineHeight: '1.5' }}>
+                For all inquiries, bookings, and consultations, kindly communicate in <strong>Hindi</strong> or <strong>Gujarati</strong> for smooth and accurate assistance.
+              </p>
+            </div>
           </div>
         </div>
       </section>

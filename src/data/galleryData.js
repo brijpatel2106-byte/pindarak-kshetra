@@ -19,7 +19,7 @@ export const galleryPhotos = [
     category: "ceremonies",
     title: "Shastri Ji Guiding Sacred Mantra Vidhi",
     image: "/images/ceremony_photo_2.jpg",
-    caption: "Shastri Shri Rajeshbhai Joshi guiding devotees through sacred Vedic mantra recitations and offerings."
+    caption: "Jitendrabhai Kantilal Thaker guiding devotees through sacred Vedic mantra recitations and offerings."
   },
   {
     id: "g_new3",
@@ -63,7 +63,7 @@ export const galleryPhotos = [
     category: "temple",
     title: "Vedic Horoscope & Muhurat Consultation",
     image: "/images/consultant.jpg?v=2",
-    caption: "Shastri Shri Rajeshbhai Joshi analyzing birth horoscopes, planetary Mahadasha remedies, and Shubh Muhurats."
+    caption: "Jitendrabhai Kantilal Thaker analyzing birth horoscopes, planetary Mahadasha remedies, and Shubh Muhurats."
   },
   {
     id: "g6",
@@ -75,7 +75,7 @@ export const galleryPhotos = [
   {
     id: "g7",
     category: "temple",
-    title: "Shastri Shri Rajeshbhai Joshi",
+    title: "Jitendrabhai Kantilal Thaker",
     image: "/images/pujari.png?v=2",
     caption: "Head Vedic Pujari & Astrologer at Pindarak Kshetra with over 35 years of dedicated spiritual lineage."
   }

@@ -34,14 +34,14 @@ export const AdminDashboard = ({ onClose }) => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '1.5rem',
+      padding: '0.75rem',
       overflowY: 'auto'
     }}>
       <div style={{
         backgroundColor: 'var(--bg-pure-white)',
         borderRadius: 'var(--radius-xl)',
         maxWidth: '1080px',
-        width: '100%',
+        width: '95vw',
         maxHeight: '92vh',
         overflowY: 'auto',
         boxShadow: 'var(--shadow-lg)',
@@ -51,16 +51,16 @@ export const AdminDashboard = ({ onClose }) => {
         <div style={{
           backgroundColor: 'var(--secondary-maroon)',
           color: '#FFF',
-          padding: '1.5rem 2.5rem',
+          padding: '1.25rem 1.25rem',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between'
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
-            <ShieldCheck size={28} style={{ color: 'var(--accent-gold)' }} />
+            <ShieldCheck size={26} style={{ color: 'var(--accent-gold)', flexShrink: 0 }} />
             <div>
-              <h2 style={{ color: '#FFF', fontSize: '1.6rem', margin: 0 }}>Pujari & Staff Admin Dashboard</h2>
-              <span style={{ fontSize: '0.85rem', color: 'var(--accent-gold)' }}>Pindarak Kshetra Sacred Request Manager</span>
+              <h2 style={{ color: '#FFF', fontSize: 'clamp(1.1rem, 3.5vw, 1.6rem)', margin: 0 }}>Pujari & Staff Admin Dashboard</h2>
+              <span style={{ fontSize: '0.8rem', color: 'var(--accent-gold)' }}>Pindarak Kshetra Sacred Request Manager</span>
             </div>
           </div>
 
@@ -70,30 +70,31 @@ export const AdminDashboard = ({ onClose }) => {
               backgroundColor: 'rgba(255, 255, 255, 0.15)',
               border: 'none',
               borderRadius: '50%',
-              width: '38px',
-              height: '38px',
+              width: '36px',
+              height: '36px',
               color: '#FFF',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              cursor: 'pointer'
+              cursor: 'pointer',
+              flexShrink: 0
             }}
           >
-            <X size={22} />
+            <X size={20} />
           </button>
         </div>
 
         {/* Search & Filters */}
         <div style={{
-          padding: '1.5rem 2.5rem',
+          padding: '1.25rem 1.25rem',
           backgroundColor: 'var(--bg-warm-cream)',
           borderBottom: '1px solid var(--border-subtle)',
           display: 'flex',
-          gap: '1.5rem',
+          gap: '1rem',
           alignItems: 'center',
           flexWrap: 'wrap'
         }}>
-          <div style={{ flex: 1, minWidth: '240px', position: 'relative' }}>
+          <div style={{ flex: '1 1 200px', minWidth: 0, position: 'relative' }}>
             <Search size={18} style={{ position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted-gray)' }} />
             <input 
               type="text"
@@ -110,20 +111,20 @@ export const AdminDashboard = ({ onClose }) => {
             />
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
             <Filter size={16} style={{ color: 'var(--text-medium-gray)' }} />
-            <span style={{ fontSize: '0.9rem', fontWeight: 600 }}>Filter Status:</span>
+            <span style={{ fontSize: '0.85rem', fontWeight: 600 }}>Filter:</span>
             {['All', 'Pending', 'Confirmed', 'Completed'].map(st => (
               <button
                 key={st}
                 onClick={() => setStatusFilter(st)}
                 style={{
-                  padding: '0.4rem 0.9rem',
+                  padding: '0.35rem 0.75rem',
                   borderRadius: 'var(--radius-full)',
                   border: '1px solid var(--border-light)',
                   backgroundColor: statusFilter === st ? 'var(--secondary-maroon)' : '#FFF',
                   color: statusFilter === st ? '#FFF' : 'var(--text-charcoal)',
-                  fontSize: '0.85rem',
+                  fontSize: '0.8rem',
                   fontWeight: 600,
                   cursor: 'pointer'
                 }}
@@ -135,7 +136,7 @@ export const AdminDashboard = ({ onClose }) => {
         </div>
 
         {/* Requests List */}
-        <div style={{ padding: '2.5rem' }}>
+        <div style={{ padding: '1.25rem' }}>
           {filteredBookings.length === 0 ? (
             <div style={{ textAlign: 'center', padding: '3rem 0', color: 'var(--text-muted-gray)' }}>
               No booking requests found matching your query.
@@ -149,12 +150,12 @@ export const AdminDashboard = ({ onClose }) => {
                     backgroundColor: 'var(--bg-pure-white)',
                     border: '1px solid var(--border-subtle)',
                     borderRadius: 'var(--radius-lg)',
-                    padding: '1.5rem',
+                    padding: '1.25rem',
                     boxShadow: 'var(--shadow-sm)',
                     display: 'grid',
-                    gridTemplateColumns: '1.5fr 1fr 1fr 1fr',
-                    gap: '1.5rem',
-                    alignItems: 'center'
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))',
+                    gap: '1.2rem',
+                    alignItems: 'start'
                   }}
                 >
                   <div>

@@ -78,14 +78,15 @@ export const Header = ({ activePage, setActivePage, onOpenBooking }) => {
         </nav>
 
         {/* Header Actions */}
-        <div className="header-actions">
+        <div className="header-actions" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           {/* Language Dropdown */}
           <div className="lang-selector">
             <button 
               className="lang-btn"
               onClick={() => setLangOpen(!langOpen)}
+              style={{ padding: '0.45rem 0.75rem', fontSize: '0.85rem' }}
             >
-              <Globe size={16} />
+              <Globe size={15} />
               <span>{lang.toUpperCase()}</span>
             </button>
 
@@ -109,12 +110,13 @@ export const Header = ({ activePage, setActivePage, onOpenBooking }) => {
 
           {/* Primary CTA - Redirects to Contact */}
           <button 
-            className="btn btn-primary btn-sm"
+            className="btn btn-primary btn-sm header-book-btn"
             onClick={() => {
               handleNavClick('contact');
             }}
+            style={{ padding: '0.5rem 0.9rem', fontSize: '0.85rem' }}
           >
-            <Calendar size={18} />
+            <Calendar size={16} />
             <span>{t('nav_book_now')}</span>
           </button>
 
@@ -123,8 +125,9 @@ export const Header = ({ activePage, setActivePage, onOpenBooking }) => {
             className="mobile-toggle"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle navigation menu"
+            style={{ padding: '0.3rem' }}
           >
-            {mobileOpen ? <X size={28} /> : <Menu size={28} />}
+            {mobileOpen ? <X size={26} /> : <Menu size={26} />}
           </button>
         </div>
       </div>
@@ -133,29 +136,33 @@ export const Header = ({ activePage, setActivePage, onOpenBooking }) => {
       {mobileOpen && (
         <div className="mobile-drawer" style={{
           position: 'fixed',
-          top: '80px',
+          top: '72px',
           left: 0,
           right: 0,
+          width: '100%',
           backgroundColor: '#FFFFFF',
-          padding: '1.5rem',
+          padding: '1.25rem 1rem',
           boxShadow: '0 20px 40px rgba(0,0,0,0.15)',
           borderBottom: '2px solid var(--accent-gold)',
-          zIndex: 110
+          zIndex: 110,
+          maxHeight: 'calc(100vh - 72px)',
+          overflowY: 'auto'
         }}>
-          <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
+          <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
             {['home', 'services', 'pujari', 'gallery', 'contact'].map(page => (
               <li key={page}>
                 <button
                   style={{
                     width: '100%',
                     textAlign: 'left',
-                    padding: '0.8rem 1rem',
+                    padding: '0.75rem 1rem',
                     background: activePage === page ? 'var(--primary-saffron-light)' : 'transparent',
                     color: activePage === page ? 'var(--primary-saffron)' : 'var(--text-charcoal)',
                     border: 'none',
                     borderRadius: '8px',
-                    fontSize: '1.1rem',
-                    fontWeight: 600
+                    fontSize: '1rem',
+                    fontWeight: 600,
+                    cursor: 'pointer'
                   }}
                   onClick={() => handleNavClick(page)}
                 >

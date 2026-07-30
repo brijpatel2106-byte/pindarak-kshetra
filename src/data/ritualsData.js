@@ -192,9 +192,9 @@ export const ritualsData = [
       gu: "વૈદિક કુંડળી વિશ્લેષણ અને મુહૂર્ત સલાહ"
     },
     shortSummary: {
-      en: "Personalized 1-on-1 guidance by Shastri Rajeshbhai Joshi analyzing horoscopes, doshas, and auspicious dates.",
-      hi: "शास्त्री राजेशभाई जोशी द्वारा कुंडली, दोष निवारण और शुभ मुहूर्त हेतु व्यक्तिगत परामर्श।",
-      gu: "શાસ્ત્રી રાજેશભાઈ જોશી દ્વારા કુંડળી, દોષ અને શુભ મુહૂર્ત માટે પર્સનલ સલાહ."
+      en: "Personalized 1-on-1 guidance by Jitendrabhai Kantilal Thaker analyzing horoscopes, doshas, and auspicious dates.",
+      hi: "जितेन्द्रभाई कांतिलाल ठाकर द्वारा कुंडली, दोष निवारण और शुभ मुहूर्त हेतु व्यक्तिगत परामर्श।",
+      gu: "જિતેન્દ્રભાઈ કાંતિલાલ ઠાકર દ્વારા કુંડળી, દોષ અને શુભ મુહૂર્ત માટે પર્સનલ સલાહ."
     },
     duration: "45 Minutes (Phone / Video / In-Person)",
     locationOptions: ["Online Video Call", "Phone Call", "In-Person Temple Visit"],
@@ -222,6 +222,48 @@ export const ritualsData = [
       "Birth Chart Calculation & Planetary Placement Analysis",
       "Identification of Doshas or Beneficial Periods",
       "Custom Remedy & Shubh Muhurat Recommendation"
+    ]
+  },
+  {
+    id: "vastu-dosha-rectification",
+    category: "astrology",
+    popular: true,
+    title: {
+      en: "Vastu Dosha Rectification",
+      hi: "वास्तु दोष निवारण",
+      gu: "વાસ્તુ દોષ નિવારણ"
+    },
+    shortSummary: {
+      en: "Vedic remedies and corrective rituals for architectural or directional imbalances in home, office, or property.",
+      hi: "घर, कार्यालय या परिसर में वास्तु दोष निवारण हेतु उपयुक्त वैदिक उपाय एवं शांति पूजा।",
+      gu: "ઘર, ઓફિસ અથવા જમીનમાં વાસ્તુ દોષ નિવારણ માટે પવિત્ર વૈદિક ઉપાય અને શાસ્ત્રોક્ત વિધિ."
+    },
+    duration: "1 Day (Approx 3 to 4 hours)",
+    locationOptions: ["Pindarak Kshetra Temple Grounds", "At My Residence (Home Puja)", "Online Guided E-Puja"],
+    image: "/images/consultant.jpg?v=2",
+    overview: {
+      en: "If any Vastu Dosha (architectural or directional imbalance) remains unresolved in your home, property, office, or other premises, appropriate Vedic remedies and corrective rituals can also be performed through Pindarak Kshetra.",
+      hi: "यदि आपके घर, संपत्ति, कार्यालय या अन्य परिसर में कोई वास्तु दोष बना हुआ है, तो पिंडारक क्षेत्र के माध्यम से उपयुक्त वैदिक उपाय और निवारण अनुष्ठान संपन्न कराए जाते हैं।",
+      gu: "જો તમારા ઘર, મિલકત, ઓફિસ અથવા અન્ય પરિસરમાં કોઈ વાસ્તુ દોષ રહેલો હોય, તો પિંડારક ક્ષેત્ર દ્વારા યોગ્ય વૈદિક ઉપાયો અને શાંતિ વિધિ કરી શકાય છે."
+    },
+    scripturalSignificance: {
+      en: "Vastu Shastra balances the Pancha Mahabhutas (five elements) and directional energies to eliminate obstacles and bring peace, health, and prosperity.",
+      hi: "वास्तु शास्त्र पंचमहाभूतों और दिशात्मक ऊर्जाओं का संतुलन बनाकर घर में सुख-समृद्धि लाता है।",
+      gu: "વાસ્તુ શાસ્ત્ર પંચમહાભૂતો અને દિશાકીય ઊર્જાઓનું સંતુલન જાળવીને ઘરમાં સમૃદ્ધિ લાવે છે."
+    },
+    whoNeedsIt: [
+      "Architectural or directional imbalances unresolved in home, office, or property.",
+      "Persistent illness, financial stress, or mental unrest in residential or commercial premises.",
+      "Premises seeking Vastu Purusha Sthapana & Vastu Shanti Havan."
+    ],
+    preparationGuidelines: [
+      "Keep property directional plan or sketch ready if available.",
+      "Maintain clean premises and wear traditional attire for the ceremony."
+    ],
+    ceremonyFlow: [
+      "Vastu Purusha Invocation & Dikpalak Puja",
+      "Navagraha & Vastu Shanti Havan",
+      "Vastu Kalash Sanctification & Blessing"
     ]
   }
 ];

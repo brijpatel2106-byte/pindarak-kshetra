@@ -39,7 +39,7 @@ export const ServicesPage = ({ onSelectDetail, onOpenBooking }) => {
         }}>
           <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', alignItems: 'center', marginBottom: '1.5rem' }}>
             {/* Search Input */}
-            <div style={{ flex: 1, minWidth: '280px', position: 'relative' }}>
+            <div style={{ flex: '1 1 240px', minWidth: 0, position: 'relative' }}>
               <Search size={20} style={{ position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted-gray)' }} />
               <input 
                 type="text"
@@ -64,14 +64,14 @@ export const ServicesPage = ({ onSelectDetail, onOpenBooking }) => {
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.id)}
                 style={{
-                  padding: '0.5rem 1.2rem',
+                  padding: '0.45rem 1rem',
                   borderRadius: 'var(--radius-full)',
                   border: '1px solid',
                   borderColor: selectedCategory === cat.id ? 'var(--primary-saffron)' : 'var(--border-light)',
                   backgroundColor: selectedCategory === cat.id ? 'var(--primary-saffron)' : 'var(--bg-pure-white)',
                   color: selectedCategory === cat.id ? '#FFF' : 'var(--text-charcoal)',
                   fontWeight: 600,
-                  fontSize: '0.92rem',
+                  fontSize: '0.88rem',
                   cursor: 'pointer',
                   transition: 'all 150ms ease'
                 }}
@@ -90,7 +90,7 @@ export const ServicesPage = ({ onSelectDetail, onOpenBooking }) => {
         ) : (
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
             gap: '2rem'
           }}>
             {filteredRituals.map(ritual => (

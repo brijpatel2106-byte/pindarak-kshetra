@@ -4,6 +4,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { RitualDetailModal } from './components/RitualDetailModal';
 import { LightboxModal } from './components/LightboxModal';
+import { WhatsAppFloatingButton } from './components/WhatsAppFloatingButton';
 
 import { HomePage } from './pages/HomePage';
 import { ServicesPage } from './pages/ServicesPage';
@@ -95,6 +96,9 @@ function AppContent() {
           onClose={() => setLightboxItem(null)}
         />
       )}
+
+      {/* Global Floating WhatsApp Widget */}
+      <WhatsAppFloatingButton />
     </div>
   );
 }

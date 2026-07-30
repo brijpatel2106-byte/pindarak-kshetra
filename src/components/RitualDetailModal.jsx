@@ -20,15 +20,15 @@ export const RitualDetailModal = ({ ritual, onClose, onBookRitual }) => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '1.5rem',
+      padding: '0.75rem',
       overflowY: 'auto'
     }}>
       <div style={{
         backgroundColor: 'var(--bg-pure-white)',
         borderRadius: 'var(--radius-xl)',
         maxWidth: '840px',
-        width: '100%',
-        maxHeight: '90vh',
+        width: '95vw',
+        maxHeight: '92vh',
         overflowY: 'auto',
         boxShadow: 'var(--shadow-lg)',
         border: '1px solid var(--accent-gold-border)',
@@ -36,7 +36,8 @@ export const RitualDetailModal = ({ ritual, onClose, onBookRitual }) => {
       }}>
         {/* Header Hero Image */}
         <div style={{
-          height: '240px',
+          minHeight: '180px',
+          maxHeight: '240px',
           position: 'relative',
           overflow: 'hidden'
         }}>
@@ -51,7 +52,7 @@ export const RitualDetailModal = ({ ritual, onClose, onBookRitual }) => {
             left: 0,
             right: 0,
             bottom: 0,
-            background: 'linear-gradient(to top, rgba(74, 14, 23, 0.9), transparent)'
+            background: 'linear-gradient(to top, rgba(74, 14, 23, 0.92), rgba(0,0,0,0.2))'
           }} />
           
           {/* Close Button */}
@@ -59,65 +60,66 @@ export const RitualDetailModal = ({ ritual, onClose, onBookRitual }) => {
             onClick={onClose}
             style={{
               position: 'absolute',
-              top: '1.2rem',
-              right: '1.2rem',
+              top: '1rem',
+              right: '1rem',
               backgroundColor: 'rgba(255, 255, 255, 0.9)',
               border: 'none',
               borderRadius: '50%',
-              width: '40px',
-              height: '40px',
+              width: '38px',
+              height: '38px',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               cursor: 'pointer',
               color: 'var(--secondary-maroon)',
-              boxShadow: 'var(--shadow-md)'
+              boxShadow: 'var(--shadow-md)',
+              zIndex: 10
             }}
           >
-            <X size={24} />
+            <X size={22} />
           </button>
 
           <div style={{
             position: 'absolute',
-            bottom: '1.5rem',
-            left: '2rem',
-            right: '2rem',
+            bottom: '1rem',
+            left: '1.25rem',
+            right: '1.25rem',
             color: '#FFF'
           }}>
-            <span className="badge-tag" style={{ backgroundColor: 'var(--primary-saffron)', color: '#FFF', borderColor: 'transparent' }}>
+            <span className="badge-tag" style={{ backgroundColor: 'var(--primary-saffron)', color: '#FFF', borderColor: 'transparent', marginBottom: '0.4rem', fontSize: '0.75rem' }}>
               {ritual.category.toUpperCase()} RITUAL
             </span>
-            <h2 style={{ color: '#FFF', fontSize: '2rem', marginTop: '0.4rem', textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}>
+            <h2 style={{ color: '#FFF', fontSize: 'clamp(1.2rem, 3.5vw, 2rem)', marginTop: '0.2rem', textShadow: '0 2px 4px rgba(0,0,0,0.5)', lineHeight: 1.25 }}>
               {getMultilingualText(ritual.title)}
             </h2>
           </div>
         </div>
 
         {/* Content Body */}
-        <div style={{ padding: '2.5rem' }}>
+        <div style={{ padding: '1.5rem 1.25rem' }}>
           {/* Duration & Location row */}
           <div style={{
             display: 'flex',
-            gap: '1.5rem',
-            padding: '1rem 1.5rem',
+            flexWrap: 'wrap',
+            gap: '1rem',
+            padding: '1rem',
             backgroundColor: 'var(--bg-warm-cream)',
             borderRadius: 'var(--radius-md)',
             border: '1px solid var(--border-subtle)',
-            marginBottom: '2rem'
+            marginBottom: '1.5rem'
           }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-              <Clock size={20} style={{ color: 'var(--primary-saffron)' }} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', flex: '1 1 200px' }}>
+              <Clock size={20} style={{ color: 'var(--primary-saffron)', flexShrink: 0 }} />
               <div>
-                <strong style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted-gray)' }}>Estimated Duration</strong>
-                <span style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--secondary-maroon)' }}>{ritual.duration}</span>
+                <strong style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted-gray)' }}>Estimated Duration</strong>
+                <span style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--secondary-maroon)' }}>{ritual.duration}</span>
               </div>
             </div>
-            <div style={{ width: '1px', backgroundColor: 'var(--border-light)' }} />
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-              <MapPin size={20} style={{ color: 'var(--primary-saffron)' }} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', flex: '1 1 200px' }}>
+              <MapPin size={20} style={{ color: 'var(--primary-saffron)', flexShrink: 0 }} />
               <div>
-                <strong style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted-gray)' }}>Available Locations</strong>
-                <span style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--secondary-maroon)' }}>
+                <strong style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted-gray)' }}>Available Locations</strong>
+                <span style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--secondary-maroon)' }}>
                   {ritual.locationOptions.join(' • ')}
                 </span>
               </div>

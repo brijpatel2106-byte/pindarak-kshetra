@@ -105,14 +105,14 @@ export const BookingWizard = ({ preselectedRitual, onClose }) => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '1rem',
+      padding: '0.75rem',
       overflowY: 'auto'
     }}>
       <div style={{
         backgroundColor: 'var(--bg-pure-white)',
         borderRadius: 'var(--radius-xl)',
         maxWidth: '860px',
-        width: '100%',
+        width: '95vw',
         maxHeight: '92vh',
         overflowY: 'auto',
         boxShadow: 'var(--shadow-lg)',
@@ -123,7 +123,7 @@ export const BookingWizard = ({ preselectedRitual, onClose }) => {
         <div style={{
           backgroundColor: 'var(--secondary-maroon)',
           color: '#FFF',
-          padding: '1.5rem 2rem',
+          padding: '1.25rem 1.25rem',
           borderTopLeftRadius: 'var(--radius-xl)',
           borderTopRightRadius: 'var(--radius-xl)',
           display: 'flex',
@@ -131,10 +131,10 @@ export const BookingWizard = ({ preselectedRitual, onClose }) => {
           justifyContent: 'space-between'
         }}>
           <div>
-            <span style={{ color: 'var(--accent-gold)', fontSize: '0.85rem', fontWeight: 700, letterSpacing: '0.05em' }}>
+            <span style={{ color: 'var(--accent-gold)', fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.05em' }}>
               OFFICIAL SACRED BOOKING WIZARD
             </span>
-            <h2 style={{ color: '#FFF', fontSize: '1.6rem', marginTop: '0.2rem' }}>
+            <h2 style={{ color: '#FFF', fontSize: 'clamp(1.2rem, 3.5vw, 1.6rem)', marginTop: '0.2rem' }}>
               {t('booking_title')}
             </h2>
           </div>
@@ -145,28 +145,30 @@ export const BookingWizard = ({ preselectedRitual, onClose }) => {
               backgroundColor: 'rgba(255, 255, 255, 0.15)',
               border: 'none',
               borderRadius: '50%',
-              width: '38px',
-              height: '38px',
+              width: '36px',
+              height: '36px',
               color: '#FFF',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              cursor: 'pointer'
+              cursor: 'pointer',
+              flexShrink: 0
             }}
           >
-            <X size={22} />
+            <X size={20} />
           </button>
         </div>
 
         {/* Step Indicator Bar */}
         <div style={{
           backgroundColor: 'var(--bg-warm-cream)',
-          padding: '1rem 2rem',
+          padding: '0.8rem 1rem',
           borderBottom: '1px solid var(--border-subtle)',
           display: 'flex',
           justifyContent: 'space-between',
-          gap: '0.5rem',
-          overflowX: 'auto'
+          gap: '0.75rem',
+          overflowX: 'auto',
+          scrollbarWidth: 'none'
         }}>
           {[1, 2, 3, 4, 5, 6].map(num => (
             <div 
@@ -179,7 +181,8 @@ export const BookingWizard = ({ preselectedRitual, onClose }) => {
                 color: step === num ? 'var(--primary-saffron)' : 'var(--text-charcoal)',
                 fontWeight: step === num ? 700 : 500,
                 fontSize: '0.85rem',
-                whiteSpace: 'nowrap'
+                whiteSpace: 'nowrap',
+                flexShrink: 0
               }}
             >
               <div style={{
@@ -209,14 +212,14 @@ export const BookingWizard = ({ preselectedRitual, onClose }) => {
         </div>
 
         {/* Wizard Content Body */}
-        <div style={{ padding: '2.5rem' }}>
+        <div style={{ padding: '1.5rem 1.25rem' }}>
 
           {/* STEP 1: SELECT RITUAL */}
           {step === 1 && (
             <div>
-              <h3 style={{ fontSize: '1.4rem', marginBottom: '1.5rem' }}>Step 1: Choose Sacred Ritual or Consultation</h3>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '1.25rem' }}>Step 1: Choose Sacred Ritual or Consultation</h3>
               
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '1rem' }}>
                 {ritualsData.map(r => (
                   <div
                     key={r.id}
@@ -434,7 +437,7 @@ export const BookingWizard = ({ preselectedRitual, onClose }) => {
 
               <div style={{ marginBottom: '1.5rem' }}>
                 <label style={{ display: 'block', fontWeight: 600, marginBottom: '0.5rem' }}>Preferred Venue / Location</label>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))', gap: '1rem' }}>
                   {[
                     'Pindarak Kshetra Temple Grounds',
                     'At My Residence (Home Puja)',
@@ -546,7 +549,7 @@ export const BookingWizard = ({ preselectedRitual, onClose }) => {
                 )}
               </div>
 
-              <div style={{ marginBottom: '1rem' }}>
+              <div style={{ marginBottom: '1.25rem' }}>
                 <label style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', cursor: 'pointer', fontWeight: 600 }}>
                   <input 
                     type="checkbox"
@@ -561,6 +564,22 @@ export const BookingWizard = ({ preselectedRitual, onClose }) => {
                     {errors.accuracyConfirmed}
                   </span>
                 )}
+              </div>
+
+              {/* Important Notice Box */}
+              <div style={{
+                backgroundColor: '#FFF8E1',
+                borderLeft: '5px solid var(--primary-saffron)',
+                borderRadius: 'var(--radius-md)',
+                padding: '1rem 1.25rem',
+                border: '1px solid var(--accent-gold-border)'
+              }}>
+                <h4 style={{ color: 'var(--secondary-maroon)', fontSize: '1.05rem', margin: '0 0 0.2rem 0', fontWeight: 800 }}>
+                  Important Notice
+                </h4>
+                <p style={{ color: 'var(--text-charcoal)', fontSize: '0.9rem', margin: 0, lineHeight: '1.5' }}>
+                  For all inquiries, bookings, and consultations, kindly communicate in <strong>Hindi</strong> or <strong>Gujarati</strong> for smooth and accurate assistance.
+                </p>
               </div>
             </div>
           )}
@@ -606,15 +625,26 @@ export const BookingWizard = ({ preselectedRitual, onClose }) => {
                 </div>
               </div>
 
-              <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '2rem' }}>
                 <a
-                  href={`https://wa.me/919879500000?text=Hari%20Om.%20My%20Booking%20Reference%20ID%20is%20${confirmedBooking.id}%20for%20${encodeURIComponent(confirmedBooking.ritualName)}`}
+                  href={`https://wa.me/919979626659?text=Hari%20Om.%20My%20Booking%20Reference%20ID%20is%20${confirmedBooking.id}%20for%20${encodeURIComponent(confirmedBooking.ritualName)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary"
                 >
                   <MessageSquare size={18} />
-                  <span>{t('btn_whatsapp_connect')}</span>
+                  <span>WhatsApp Primary (+91 9979626659)</span>
+                </a>
+
+                <a
+                  href={`https://wa.me/918980333989?text=Hari%20Om.%20My%20Booking%20Reference%20ID%20is%20${confirmedBooking.id}%20for%20${encodeURIComponent(confirmedBooking.ritualName)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                  style={{ backgroundColor: '#25D366' }}
+                >
+                  <MessageSquare size={18} />
+                  <span>WhatsApp Secondary (+91 8980333989)</span>
                 </a>
 
                 <button onClick={printSummary} className="btn btn-secondary">
@@ -625,6 +655,25 @@ export const BookingWizard = ({ preselectedRitual, onClose }) => {
                 <button onClick={onClose} className="btn btn-outline-gold">
                   Return to Website
                 </button>
+              </div>
+
+              {/* Important Notice Box in Confirmation Screen */}
+              <div style={{
+                backgroundColor: '#FFF8E1',
+                borderLeft: '5px solid var(--primary-saffron)',
+                borderRadius: 'var(--radius-md)',
+                padding: '1rem 1.25rem',
+                textAlign: 'left',
+                border: '1px solid var(--accent-gold-border)',
+                maxWidth: '640px',
+                margin: '0 auto'
+              }}>
+                <h4 style={{ color: 'var(--secondary-maroon)', fontSize: '1.1rem', margin: '0 0 0.3rem 0', fontWeight: 800 }}>
+                  Important Notice
+                </h4>
+                <p style={{ color: 'var(--text-charcoal)', fontSize: '0.92rem', margin: 0, lineHeight: '1.5' }}>
+                  For all inquiries, bookings, and consultations, kindly communicate in <strong>Hindi</strong> or <strong>Gujarati</strong> for smooth and accurate assistance.
+                </p>
               </div>
             </div>
           )}

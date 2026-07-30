@@ -24,14 +24,14 @@ export const LightboxModal = ({ item, onClose }) => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '1rem',
+      padding: '0.5rem',
       animation: 'fadeIn 250ms ease forwards'
     }}>
       <div style={{
         position: 'relative',
         maxWidth: isVideo ? '1120px' : '900px',
-        width: '95vw',
-        maxHeight: '90vh',
+        width: '94vw',
+        maxHeight: '94vh',
         backgroundColor: '#000',
         borderRadius: 'var(--radius-xl)',
         overflow: 'hidden',
@@ -43,14 +43,15 @@ export const LightboxModal = ({ item, onClose }) => {
         {/* Top Header Bar with Close Button */}
         <div style={{
           backgroundColor: 'rgba(20, 24, 30, 0.95)',
-          padding: '1rem 1.5rem',
+          padding: '0.75rem 1rem',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
           borderBottom: '1px solid rgba(255,255,255,0.1)',
-          zIndex: 10
+          zIndex: 10,
+          gap: '0.5rem'
         }}>
-          <h3 style={{ color: '#FFF', fontSize: '1.25rem', margin: 0, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+          <h3 style={{ color: '#FFF', fontSize: 'clamp(1rem, 3vw, 1.25rem)', margin: 0, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
             {item.title}
           </h3>
 
@@ -60,26 +61,27 @@ export const LightboxModal = ({ item, onClose }) => {
               backgroundColor: 'var(--primary-saffron)',
               border: 'none',
               borderRadius: 'var(--radius-full)',
-              padding: '0.4rem 1rem',
+              padding: '0.4rem 0.8rem',
               color: '#FFF',
               display: 'flex',
               alignItems: 'center',
-              gap: '0.4rem',
+              gap: '0.3rem',
               cursor: 'pointer',
               fontWeight: 700,
-              fontSize: '0.9rem',
-              boxShadow: '0 4px 12px rgba(216, 67, 21, 0.4)'
+              fontSize: '0.85rem',
+              boxShadow: '0 4px 12px rgba(216, 67, 21, 0.4)',
+              flexShrink: 0
             }}
           >
-            <X size={18} />
-            <span>Close Player</span>
+            <X size={16} />
+            <span>Close</span>
           </button>
         </div>
 
         {/* Video Player Main View */}
         {isVideo ? (
           <div style={{ flex: 1, backgroundColor: '#000', display: 'flex', flexDirection: 'column' }}>
-            <div style={{ position: 'relative', width: '100%', height: 'calc(80vh - 120px)', backgroundColor: '#000' }}>
+            <div style={{ position: 'relative', width: '100%', minHeight: '220px', height: 'calc(75vh - 100px)', backgroundColor: '#000' }}>
               {item.videoUrl ? (
                 item.videoUrl.includes('youtube.com') || item.videoUrl.includes('youtu.be') ? (
                   <iframe 

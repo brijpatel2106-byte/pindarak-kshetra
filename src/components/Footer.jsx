@@ -21,9 +21,9 @@ export const Footer = ({ setActivePage, onOpenBooking }) => {
       <div className="container">
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-          gap: '3rem',
-          marginBottom: '3.5rem'
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))',
+          gap: '2rem',
+          marginBottom: '2.5rem'
         }}>
           {/* Column 1: Organization Bio */}
           <div>
@@ -91,9 +91,9 @@ export const Footer = ({ setActivePage, onOpenBooking }) => {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.8rem', color: '#CBD5E0', fontSize: '0.95rem' }}>
               <li>• Narayan Nagbali & Pitru Moksha</li>
               <li>• Kaal Sarp & Sarpa Shanti</li>
+              <li>• Vastu Dosha Rectification</li>
               <li>• Navagraha Shanti Mahayajna</li>
               <li>• Shree Satyanarayan Katha</li>
-              <li>• Rudrabhishek & Mrityunjaya Jaap</li>
               <li>• Horoscope & Muhurat Consultation</li>
             </ul>
           </div>
@@ -105,16 +105,19 @@ export const Footer = ({ setActivePage, onOpenBooking }) => {
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', color: '#E2E8F0', fontSize: '0.95rem' }}>
               <div style={{ display: 'flex', gap: '0.8rem', alignItems: 'flex-start' }}>
-                <MapPin size={20} style={{ color: 'var(--accent-gold)', flexShrink: 0 }} />
+                <MapPin size={20} style={{ color: 'var(--accent-gold)', flexShrink: 0, marginTop: '2px' }} />
                 <span>{t('contact_address')}</span>
               </div>
-              <div style={{ display: 'flex', gap: '0.8rem', alignItems: 'center' }}>
-                <Phone size={20} style={{ color: 'var(--accent-gold)', flexShrink: 0 }} />
-                <span>{t('contact_phone')}</span>
+              <div style={{ display: 'flex', gap: '0.8rem', alignItems: 'flex-start' }}>
+                <Phone size={20} style={{ color: 'var(--accent-gold)', flexShrink: 0, marginTop: '2px' }} />
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                  <a href="tel:+919979626659" style={{ color: '#FFF', textDecoration: 'underline' }}>+91 9979626659</a>
+                  <a href="tel:+918980333989" style={{ color: '#FFF', textDecoration: 'underline' }}>+91 8980333989</a>
+                </div>
               </div>
               <div style={{ display: 'flex', gap: '0.8rem', alignItems: 'center' }}>
                 <Mail size={20} style={{ color: 'var(--accent-gold)', flexShrink: 0 }} />
-                <span>{t('contact_email')}</span>
+                <a href="mailto:jthaker511@gmail.com" style={{ color: '#FFF', textDecoration: 'underline' }}>jthaker511@gmail.com</a>
               </div>
 
               <div style={{ marginTop: '1rem', paddingTop: '1rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>

@@ -53,16 +53,16 @@ export const KnowledgePage = () => {
 
         {/* Article Reader View */}
         {activeArticle ? (
-          <div className="card" style={{ maxWidth: '880px', margin: '0 auto', padding: '3.5rem', borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-lg)' }}>
+          <div className="card" style={{ maxWidth: '880px', margin: '0 auto', padding: '1.5rem', borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-lg)' }}>
             <button 
               onClick={() => setActiveArticle(null)}
               className="btn btn-secondary btn-sm"
-              style={{ marginBottom: '2.5rem' }}
+              style={{ marginBottom: '1.5rem' }}
             >
               ← Back to All Guides
             </button>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', marginBottom: '1rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
               <span style={{
                 fontSize: '0.8rem',
                 fontWeight: 800,
@@ -79,17 +79,17 @@ export const KnowledgePage = () => {
               </span>
             </div>
 
-            <h1 style={{ fontSize: '2.4rem', margin: '0.6rem 0 1.5rem 0', color: 'var(--secondary-maroon)', lineHeight: '1.3' }}>
+            <h1 style={{ fontSize: 'clamp(1.5rem, 4vw, 2.4rem)', margin: '0.6rem 0 1.5rem 0', color: 'var(--secondary-maroon)', lineHeight: '1.3' }}>
               {getMultilingualText(activeArticle.title)}
             </h1>
 
-            <div style={{ display: 'flex', gap: '1.8rem', color: 'var(--text-muted-gray)', fontSize: '0.95rem', marginBottom: '2.5rem', borderBottom: '1px solid var(--border-subtle)', paddingBottom: '1.2rem' }}>
+            <div style={{ display: 'flex', gap: '1.2rem', flexWrap: 'wrap', color: 'var(--text-muted-gray)', fontSize: '0.9rem', marginBottom: '2rem', borderBottom: '1px solid var(--border-subtle)', paddingBottom: '1rem' }}>
               <span>By {activeArticle.author}</span>
               <span>Published {activeArticle.date}</span>
             </div>
 
             <div 
-              style={{ lineHeight: '1.95', fontSize: '1.1rem', color: 'var(--text-charcoal)' }}
+              style={{ lineHeight: '1.95', fontSize: '1.05rem', color: 'var(--text-charcoal)' }}
               dangerouslySetInnerHTML={{ __html: getMultilingualText(activeArticle.content).replace(/\n/g, '<br/>') }}
             />
           </div>
@@ -97,8 +97,8 @@ export const KnowledgePage = () => {
           /* Magazine Articles Grid */
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
-            gap: '2.5rem'
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
+            gap: '2rem'
           }}>
             {filteredArticles.map(art => (
               <div 

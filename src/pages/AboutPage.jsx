@@ -34,7 +34,7 @@ export const AboutPage = ({ onOpenBooking }) => {
           Our Sacred Pillars & Values
         </h3>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem', marginBottom: '3.5rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '1.25rem', marginBottom: '3rem' }}>
           {[
             { title: "Strict Vedic Purity", desc: "Every mantra, havan, and pind daan follows exact shastric vidhi without shortcuts." },
             { title: "Multilingual Clarity", desc: "Rituals are explained step-by-step in English, Hindi, or Gujarati for family unity." },

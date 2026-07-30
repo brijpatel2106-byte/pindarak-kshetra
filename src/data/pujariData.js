@@ -1,8 +1,8 @@
 export const pujariProfile = {
   name: {
-    en: "Shastri Shri Rajeshbhai Joshi",
-    hi: "शास्त्री श्री राजेशभाई जोशी",
-    gu: "શાસ્ત્રી શ્રી રાજેશભાઈ જોશી"
+    en: "Jitendrabhai Kantilal Thaker",
+    hi: "जितेन्द्रभाई कांतिलाल ठाकर",
+    gu: "જિતેન્દ્રભાઈ કાંતિલાલ ઠાકર"
   },
   title: {
     en: "Head Vedic Pujari & Astrologer, Pindarak Kshetra",
@@ -20,6 +20,7 @@ export const pujariProfile = {
   specializations: [
     "Narayan Nagbali & Pitru Moksha Vidhi",
     "Kaal Sarp & Sarpa Dosha Shanti",
+    "Vastu Dosha Rectification & Remedial Pujas",
     "Navagraha Havan & Nakshatra Remedies",
     "Maha Mrityunjaya & Rudrabhishek",
     "Astrological Horoscope Analysis & Muhurat Selection"
@@ -30,9 +31,9 @@ export const pujariProfile = {
     gu: "સંપૂર્ણાનંદ સંસ્કૃત વિશ્વવિદ્યાલય માંથી કર્મકાંડ અને જ્યોતિષમાં શાસ્ત્રી ડિગ્રી"
   },
   biography: {
-    en: "Shastri Rajeshbhai Joshi has devoted over three decades of his life to conducting sacred rituals according to strict Vedic scriptures. Raised at Pindarak Kshetra, he combines profound scriptural scholarship with a gentle, compassionate approach. He has guided over 8,500 families from India, USA, UK, Canada, and Africa in fulfilling their sacred duties towards their ancestors and family peace.",
-    hi: "शास्त्री राजेशभाई जोशी ने 35 से अधिक वर्षों का समय वैदिक शास्त्रों के अनुसार प्रामाणिक पूजा संपन्न कराने में समर्पित किया है। पिंडारक क्षेत्र में पले-बढ़े शास्त्री जी उच्च कोटि के विद्वान हैं। उन्होंने भारत और विदेशों (अमेरिका, ब्रिटेन, कनाडा आदि) के 8,500 से अधिक परिवारों का मार्गदर्शन किया है।",
-    gu: "શાસ્ત્રી રાજેશભાઈ જોશીએ ૩૫ વર્ષથી વધુ સમય શાસ્ત્રોક્ત પૂજા કરાવવામાં સમર્પિત કર્યો છે. પિંડારક ક્ષેત્ર ખાતે રહેતા શાસ્ત્રીજીએ ભારત અને વિદેશના (યુએસએ, કેનેડા વગેરે) ૮,૫૦૦ થી વધુ પરિવારોને માર્ગદર્શન આપ્યું છે."
+    en: "Jitendrabhai Kantilal Thaker has devoted over three decades of his life to conducting sacred rituals according to strict Vedic scriptures. Raised at Pindarak Kshetra, he combines profound scriptural scholarship with a gentle, compassionate approach. He has guided over 8,500 families from India, USA, UK, Canada, and Africa in fulfilling their sacred duties towards their ancestors and family peace.",
+    hi: "जितेन्द्रभाई कांतिलाल ठाकर ने 35 से अधिक वर्षों का समय वैदिक शास्त्रों के अनुसार प्रामाणिक पूजा संपन्न कराने में समर्पित किया है। पिंडारक क्षेत्र में पले-बढ़े शास्त्री जी उच्च कोटि के विद्वान हैं। उन्होंने भारत और विदेशों (अमेरिका, ब्रिटेन, कनाडा आदि) के 8,500 से अधिक परिवारों का मार्गदर्शन किया है।",
+    gu: "જિતેન્દ્રભાઈ કાંતિલાલ ઠાકરે ૩૫ વર્ષથી વધુ સમય શાસ્ત્રોક્ત પૂજા કરાવવામાં સમર્પિત કર્યો છે. પિંડારક ક્ષેત્ર ખાતે રહેતા શાસ્ત્રીજીએ ભારત અને વિદેશના (યુએસએ, કેનેડા વગેરે) ૮,૫૦૦ થી વધુ પરિવારોને માર્ગદર્શન આપ્યું છે."
   },
   philosophy: {
     en: "\"Every ritual is not merely a formality, but a bridge of love, prayer, and light connecting our families across time. My duty is to guide every family with absolute purity and understanding.\"",
