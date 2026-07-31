@@ -86,7 +86,7 @@ export const RitualDetailModal = ({ ritual, onClose, onBookRitual }) => {
             right: '1.25rem',
             color: '#FFF'
           }}>
-            <span className="badge-tag" style={{ backgroundColor: 'var(--primary-saffron)', color: '#FFF', borderColor: 'transparent', marginBottom: '0.4rem', fontSize: '0.75rem' }}>
+            <span className="badge-tag badge-tag-saffron" style={{ marginBottom: '0.4rem', fontSize: '0.75rem' }}>
               {ritual.category.toUpperCase()} RITUAL
             </span>
             <h2 style={{ color: '#FFF', fontSize: 'clamp(1.2rem, 3.5vw, 2rem)', marginTop: '0.2rem', textShadow: '0 2px 4px rgba(0,0,0,0.5)', lineHeight: 1.25 }}>

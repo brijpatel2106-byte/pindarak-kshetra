@@ -29,7 +29,7 @@ export const HomePage = ({ setActivePage, onSelectDetail, onOpenBooking, onSelec
       }}>
         <div className="container">
           <div style={{ maxWidth: '840px' }}>
-            <span className="badge-tag floating-pill" style={{ backgroundColor: 'var(--primary-saffron)', color: '#FFF', borderColor: 'transparent' }}>
+            <span className="badge-tag badge-tag-saffron floating-pill">
               <Sparkles size={14} /> {t('hero_badge')}
             </span>
 
