@@ -461,6 +461,49 @@ p {
   .mobile-toggle { display: block; }
 }
 
+@media (max-width: 640px) {
+  .header-container {
+    height: 68px;
+    padding: 0 0.85rem;
+  }
+
+  .brand-logo {
+    gap: 0.4rem;
+    max-width: calc(100% - 130px);
+    overflow: hidden;
+  }
+
+  .brand-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+
+  .brand-text h1 {
+    font-size: 1.05rem !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .header-actions {
+    gap: 0.35rem;
+    flex-shrink: 0;
+  }
+
+  .lang-btn {
+    padding: 0.35rem 0.65rem !important;
+    font-size: 0.8rem !important;
+    height: 34px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .header-book-btn {
+    display: none !important;
+  }
+}
+
 /* Un-boxy Organic Cards & Containers */
 .card {
   background-color: var(--bg-pure-white);

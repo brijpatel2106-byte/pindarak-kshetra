@@ -136,7 +136,7 @@ export const Header = ({ activePage, setActivePage, onOpenBooking }) => {
       {mobileOpen && (
         <div className="mobile-drawer" style={{
           position: 'fixed',
-          top: '72px',
+          top: '68px',
           left: 0,
           right: 0,
           width: '100%',
@@ -145,10 +145,62 @@ export const Header = ({ activePage, setActivePage, onOpenBooking }) => {
           boxShadow: '0 20px 40px rgba(0,0,0,0.15)',
           borderBottom: '2px solid var(--accent-gold)',
           zIndex: 110,
-          maxHeight: 'calc(100vh - 72px)',
+          maxHeight: 'calc(100vh - 68px)',
           overflowY: 'auto'
         }}>
-          <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+          {/* Mobile Primary Book Action */}
+          <div style={{ marginBottom: '1rem' }}>
+            <button 
+              className="btn btn-primary"
+              onClick={() => {
+                handleNavClick('contact');
+              }}
+              style={{ width: '100%', justifyContent: 'center', padding: '0.85rem 1rem', fontSize: '1rem', fontWeight: 700 }}
+            >
+              <Calendar size={18} />
+              <span>{t('nav_book_now')}</span>
+            </button>
+          </div>
+
+          {/* Mobile Language Switcher Bar */}
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            padding: '0.65rem 0.9rem',
+            backgroundColor: 'var(--bg-warm-cream)',
+            borderRadius: 'var(--radius-md)',
+            border: '1px solid var(--border-light)',
+            marginBottom: '1.2rem'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem', fontWeight: 700, color: 'var(--secondary-maroon)' }}>
+              <Globe size={16} style={{ color: 'var(--primary-saffron)' }} />
+              <span>Select Language:</span>
+            </div>
+            <div style={{ display: 'flex', gap: '0.4rem' }}>
+              {languages.map((l) => (
+                <button
+                  key={l.code}
+                  onClick={() => setLang(l.code)}
+                  style={{
+                    padding: '0.35rem 0.65rem',
+                    borderRadius: 'var(--radius-sm)',
+                    border: '1px solid',
+                    borderColor: lang === l.code ? 'var(--primary-saffron)' : 'var(--border-light)',
+                    backgroundColor: lang === l.code ? 'var(--primary-saffron)' : '#FFF',
+                    color: lang === l.code ? '#FFF' : 'var(--text-charcoal)',
+                    fontSize: '0.82rem',
+                    fontWeight: 700,
+                    cursor: 'pointer'
+                  }}
+                >
+                  {l.code.toUpperCase()}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
             {['home', 'services', 'pujari', 'gallery', 'contact'].map(page => (
               <li key={page}>
                 <button
