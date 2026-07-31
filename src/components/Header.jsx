@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { Globe, Calendar, Menu, X, Flame } from 'lucide-react';
+import { Globe, Calendar, Menu, X, Flame, Phone, MessageSquare } from 'lucide-react';
 
 export const Header = ({ activePage, setActivePage, onOpenBooking }) => {
   const { lang, setLang, t } = useLanguage();
@@ -19,7 +19,52 @@ export const Header = ({ activePage, setActivePage, onOpenBooking }) => {
   };
 
   return (
-    <header className="site-header">
+    <>
+      {/* Top Contact Strip displaying Phone & WhatsApp numbers */}
+      <div style={{
+        backgroundColor: 'var(--secondary-maroon)',
+        color: '#FFF',
+        padding: '0.45rem 0',
+        fontSize: '0.85rem',
+        borderBottom: '1px solid var(--accent-gold)'
+      }}>
+        <div className="container" style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          gap: '0.6rem'
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1.2rem', flexWrap: 'wrap' }}>
+            <a 
+              href="tel:+919979626659" 
+              style={{ color: 'var(--accent-gold)', display: 'inline-flex', alignItems: 'center', gap: '0.35rem', textDecoration: 'none', fontWeight: 700 }}
+            >
+              <Phone size={14} /> +91 9979626659
+            </a>
+            <a 
+              href="tel:+918980333989" 
+              style={{ color: '#E2E8F0', display: 'inline-flex', alignItems: 'center', gap: '0.35rem', textDecoration: 'none', fontWeight: 600 }}
+            >
+              <Phone size={14} /> +91 8980333989
+            </a>
+            <a 
+              href="https://wa.me/919979626659" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              style={{ color: '#25D366', display: 'inline-flex', alignItems: 'center', gap: '0.35rem', textDecoration: 'none', fontWeight: 700 }}
+            >
+              <MessageSquare size={14} /> WhatsApp Us
+            </a>
+          </div>
+
+          <div style={{ color: 'var(--accent-gold)', fontSize: '0.82rem', fontWeight: 500 }}>
+            Shastri Jitendrabhai Kantilal Thaker | Pindarak Kshetra
+          </div>
+        </div>
+      </div>
+
+      <header className="site-header">
       <div className="container header-container">
         {/* Brand Logo */}
         <a href="#home" onClick={(e) => { e.preventDefault(); handleNavClick('home'); }} className="brand-logo">
@@ -174,5 +219,6 @@ export const Header = ({ activePage, setActivePage, onOpenBooking }) => {
         </div>
       )}
     </header>
-  );
+  </>
+);
 };

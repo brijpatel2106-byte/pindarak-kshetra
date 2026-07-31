@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { pujariProfile } from '../data/pujariData';
-import { Award, BookOpen, Globe, CheckCircle, Calendar, MessageSquare, Quote, Star } from 'lucide-react';
+import { Award, BookOpen, Globe, CheckCircle, Calendar, MessageSquare, Quote, Star, Phone, Mail } from 'lucide-react';
 
 export const PujariPage = ({ onOpenBooking }) => {
   const { getMultilingualText } = useLanguage();
@@ -16,7 +16,7 @@ export const PujariPage = ({ onOpenBooking }) => {
           alignItems: 'flex-start',
           marginBottom: '3rem'
         }}>
-          {/* Left Column: Curved Arch Portrait with Glow Halo */}
+          {/* Left Column: Curved Arch Portrait with Glow Halo & Direct Contact Card */}
           <div>
             <div className="gold-glow-halo">
               <div className="arch-frame" style={{ maxWidth: '420px', margin: '0 auto' }}>
@@ -28,10 +28,57 @@ export const PujariPage = ({ onOpenBooking }) => {
               </div>
             </div>
 
+            {/* Direct Contact Details Card */}
             <div style={{
-              marginTop: '2rem',
+              marginTop: '1.8rem',
+              backgroundColor: 'var(--secondary-maroon)',
+              color: '#FFF',
+              padding: '1.5rem',
+              borderRadius: 'var(--radius-lg)',
+              boxShadow: 'var(--shadow-md)',
+              border: '2px solid var(--accent-gold)'
+            }}>
+              <h4 style={{ color: 'var(--accent-gold)', marginBottom: '1rem', fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <Phone size={18} /> Direct Contact & Consultation
+              </h4>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem', fontSize: '0.95rem' }}>
+                <div>
+                  <div style={{ fontSize: '0.8rem', color: '#CBD5E0', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Primary Phone / WhatsApp</div>
+                  <a href={`tel:${pujariProfile.contact.phonePrimary.replace(/\s+/g, '')}`} style={{ color: '#FFF', fontWeight: 700, fontSize: '1.1rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
+                    {pujariProfile.contact.phonePrimary}
+                  </a>
+                </div>
+                <div>
+                  <div style={{ fontSize: '0.8rem', color: '#CBD5E0', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Secondary Phone</div>
+                  <a href={`tel:${pujariProfile.contact.phoneSecondary.replace(/\s+/g, '')}`} style={{ color: '#FFF', fontWeight: 600, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
+                    {pujariProfile.contact.phoneSecondary}
+                  </a>
+                </div>
+                <div>
+                  <div style={{ fontSize: '0.8rem', color: '#CBD5E0', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Email Address</div>
+                  <a href={`mailto:${pujariProfile.contact.email}`} style={{ color: 'var(--accent-gold)', fontWeight: 600, textDecoration: 'underline' }}>
+                    {pujariProfile.contact.email}
+                  </a>
+                </div>
+                <div style={{ marginTop: '0.5rem' }}>
+                  <a 
+                    href={`https://wa.me/${pujariProfile.contact.whatsapp.replace(/[^0-9]/g, '')}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-sm"
+                    style={{ backgroundColor: '#25D366', color: '#FFF', width: '100%', justifyContent: 'center', fontWeight: 700, border: 'none' }}
+                  >
+                    <MessageSquare size={16} />
+                    <span>WhatsApp Direct Chat</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div style={{
+              marginTop: '1.5rem',
               backgroundColor: 'var(--bg-pure-white)',
-              padding: '1.8rem',
+              padding: '1.5rem',
               borderRadius: 'var(--radius-lg)',
               boxShadow: 'var(--shadow-sm)',
               border: '1px solid var(--border-subtle)'

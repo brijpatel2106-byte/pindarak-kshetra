@@ -30,6 +30,13 @@ export const pujariProfile = {
     hi: "सम्पूर्णानंद संस्कृत विश्वविद्यालय से कर्मकांड एवं वेदांग ज्योतिष में शास्त्री उपाधि",
     gu: "સંપૂર્ણાનંદ સંસ્કૃત વિશ્વવિદ્યાલય માંથી કર્મકાંડ અને જ્યોતિષમાં શાસ્ત્રી ડિગ્રી"
   },
+  contact: {
+    phonePrimary: "+91 9979626659",
+    phoneSecondary: "+91 8980333989",
+    whatsapp: "+91 9979626659",
+    email: "jthaker511@gmail.com",
+    location: "Pindarak Kshetra, Devbhumi Dwarka, Gujarat – 361315"
+  },
   biography: {
     en: "Jitendrabhai Kantilal Thaker has devoted over three decades of his life to conducting sacred rituals according to strict Vedic scriptures. Raised at Pindarak Kshetra, he combines profound scriptural scholarship with a gentle, compassionate approach. He has guided over 8,500 families from India, USA, UK, Canada, and Africa in fulfilling their sacred duties towards their ancestors and family peace.",
     hi: "जितेन्द्रभाई कांतिलाल ठाकर ने 35 से अधिक वर्षों का समय वैदिक शास्त्रों के अनुसार प्रामाणिक पूजा संपन्न कराने में समर्पित किया है। पिंडारक क्षेत्र में पले-बढ़े शास्त्री जी उच्च कोटि के विद्वान हैं। उन्होंने भारत और विदेशों (अमेरिका, ब्रिटेन, कनाडा आदि) के 8,500 से अधिक परिवारों का मार्गदर्शन किया है।",
