@@ -53,10 +53,16 @@ export const HomePage = ({ setActivePage, onSelectDetail, onOpenBooking, onSelec
               <button 
                 className="btn btn-secondary btn-lg"
                 onClick={() => setActivePage('services')}
-                style={{ backgroundColor: 'rgba(255, 255, 255, 0.95)', border: 'none' }}
+                style={{ 
+                  backgroundColor: '#FFFFFF', 
+                  color: 'var(--secondary-maroon)', 
+                  border: '2px solid var(--accent-gold)',
+                  boxShadow: '0 8px 24px rgba(0, 0, 0, 0.25)',
+                  fontWeight: 700
+                }}
               >
-                <span>{t('hero_cta_services')}</span>
-                <ArrowRight size={20} />
+                <span style={{ color: 'var(--secondary-maroon)', fontWeight: 700 }}>{t('hero_cta_services')}</span>
+                <ArrowRight size={20} style={{ color: 'var(--secondary-maroon)' }} />
               </button>
             </div>
 

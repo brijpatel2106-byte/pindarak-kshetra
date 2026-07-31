@@ -233,16 +233,25 @@ p {
 
 .btn-secondary {
   background-color: var(--bg-pure-white);
-  color: var(--secondary-maroon);
+  color: var(--secondary-maroon) !important;
   border-color: var(--border-light);
   box-shadow: var(--shadow-sm);
+  font-weight: 700;
+}
+
+.btn-secondary * {
+  color: var(--secondary-maroon) !important;
 }
 
 .btn-secondary:hover {
   border-color: var(--accent-gold);
-  color: var(--primary-saffron);
+  color: var(--primary-saffron) !important;
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
+}
+
+.btn-secondary:hover * {
+  color: var(--primary-saffron) !important;
 }
 
 .btn-outline-gold {
