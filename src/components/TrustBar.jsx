@@ -2,6 +2,7 @@ import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Award, Users, CheckCircle2, Languages } from 'lucide-react';
 
+// Updated metrics: 500+ Rituals Conducted, 900+ Families Blessed
 export const TrustBar = () => {
   const { t } = useLanguage();
 
