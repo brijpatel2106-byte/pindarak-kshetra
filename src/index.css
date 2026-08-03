@@ -302,13 +302,13 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 88px;
+  height: 92px;
   max-width: 100%;
 }
 
 @media (max-width: 480px) {
   .header-container {
-    height: 78px;
+    height: 82px;
   }
 }
 
@@ -322,6 +322,7 @@ p {
   min-width: 0;
   flex-shrink: 1;
   padding: 4px 0;
+  overflow: visible !important;
 }
 
 .brand-icon {
@@ -344,7 +345,8 @@ p {
   flex-direction: column;
   justify-content: center;
   min-width: 0;
-  padding: 4px 0;
+  padding: 4px 0 2px 0;
+  overflow: visible !important;
 }
 
 .brand-title {
@@ -353,10 +355,10 @@ p {
   line-height: 1.45;
   font-weight: 800;
   margin: 0;
-  padding-top: 4px;
+  padding-top: 5px;
   padding-bottom: 2px;
   letter-spacing: -0.01em;
-  font-family: var(--font-body);
+  overflow: visible !important;
 }
 
 .brand-subtitle {
@@ -364,11 +366,11 @@ p {
   color: var(--primary-saffron);
   font-weight: 700;
   margin-top: 2px;
-  padding-top: 2px;
+  padding-top: 3px;
   padding-bottom: 2px;
   letter-spacing: 0.01em;
   white-space: nowrap;
-  font-family: var(--font-body);
+  overflow: visible !important;
 }
 
 .nav-links {
