@@ -136,8 +136,8 @@ export const Header = ({ activePage, setActivePage, onOpenBooking }) => {
       {/* Mobile Drawer Navigation */}
       {mobileOpen && (
         <div className="mobile-drawer" style={{
-          position: 'fixed',
-          top: '68px',
+          position: 'absolute',
+          top: '100%',
           left: 0,
           right: 0,
           width: '100%',
@@ -146,7 +146,7 @@ export const Header = ({ activePage, setActivePage, onOpenBooking }) => {
           boxShadow: '0 20px 40px rgba(0,0,0,0.15)',
           borderBottom: '2px solid var(--accent-gold)',
           zIndex: 110,
-          maxHeight: 'calc(100vh - 68px)',
+          maxHeight: '80vh',
           overflowY: 'auto'
         }}>
           {/* Mobile Primary Book Action */}
