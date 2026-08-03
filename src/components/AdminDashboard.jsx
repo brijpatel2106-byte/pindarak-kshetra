@@ -57,10 +57,18 @@ export const AdminDashboard = ({ onClose }) => {
           justifyContent: 'space-between'
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
-            <ShieldCheck size={26} style={{ color: 'var(--accent-gold)', flexShrink: 0 }} />
+            <div style={{ width: '44px', height: '44px', borderRadius: '50%', overflow: 'hidden', border: '2px solid var(--accent-gold)', flexShrink: 0, boxShadow: 'var(--shadow-sm)' }}>
+              <img 
+                src="/images/shastrijii's image.jpeg" 
+                alt="Shastri Rajeshbhai Joshi" 
+                className="img-fade-in"
+                loading="lazy"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+              />
+            </div>
             <div>
-              <h2 style={{ color: '#FFF', fontSize: 'clamp(1.1rem, 3.5vw, 1.6rem)', margin: 0 }}>Pujari & Staff Admin Dashboard</h2>
-              <span style={{ fontSize: '0.8rem', color: 'var(--accent-gold)' }}>Pindarak Kshetra Sacred Request Manager</span>
+              <h2 style={{ color: '#FFF', fontSize: 'clamp(1.1rem, 3.5vw, 1.6rem)', margin: 0 }}>Pujari Admin Dashboard</h2>
+              <span style={{ fontSize: '0.8rem', color: 'var(--accent-gold)' }}>Shastri Rajeshbhai Joshi • Pindarak Kshetra</span>
             </div>
           </div>
 

@@ -25,7 +25,7 @@ export const ritualsData = [
     },
     duration: "3 Days (Approx 4 hours daily)",
     locationOptions: ["Pindarak Kshetra Temple Grounds", "Online Guided E-Puja"],
-    image: "/images/narayan_nagbali.jpg?v=2",
+    image: "/images/pitra moksh.jpeg",
     overview: {
       en: "Narayan Nagbali is one of the most significant Vedic rituals performed at holy kshetras like Pindarak. It consists of two distinct parts: Narayan Bali (to liberate souls of departed ancestors suffering from unfulfilled desires) and Nagbali (to seek forgiveness for accidental harm to serpents).",
       hi: "नारायण नागबलि पिंडारक जैसे पवित्र क्षेत्रों में संपन्न किया जाने वाला अत्यंत महत्वपूर्ण वैदिक अनुष्ठान है। यह दो भागों में होता है: नारायण बलि (पितरों की आत्मा की मुक्ति हेतु) और नागबलि (सर्प दोष निवारण हेतु)।",
@@ -192,9 +192,9 @@ export const ritualsData = [
       gu: "વૈદિક કુંડળી વિશ્લેષણ અને મુહૂર્ત સલાહ"
     },
     shortSummary: {
-      en: "Personalized 1-on-1 guidance by Jitendrabhai Kantilal Thaker analyzing horoscopes, doshas, and auspicious dates.",
-      hi: "जितेन्द्रभाई कांतिलाल ठाकर द्वारा कुंडली, दोष निवारण और शुभ मुहूर्त हेतु व्यक्तिगत परामर्श।",
-      gu: "જિતેન્દ્રભાઈ કાંતિલાલ ઠાકર દ્વારા કુંડળી, દોષ અને શુભ મુહૂર્ત માટે પર્સનલ સલાહ."
+      en: "Personalized 1-on-1 guidance by Shastri Rajeshbhai Joshi analyzing horoscopes, doshas, and auspicious dates.",
+      hi: "शास्त्री राजेशभाई जोशी द्वारा कुंडली, दोष निवारण और शुभ मुहूर्त हेतु व्यक्तिगत परामर्श।",
+      gu: "શાસ્ત્રી રાજેશભાઈ જોશી દ્વારા કુંડળી, દોષ અને શુભ મુહૂર્ત માટે પર્સનલ સલાહ."
     },
     duration: "45 Minutes (Phone / Video / In-Person)",
     locationOptions: ["Online Video Call", "Phone Call", "In-Person Temple Visit"],

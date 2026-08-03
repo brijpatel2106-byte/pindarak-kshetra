@@ -16,7 +16,7 @@ export const knowledgeArticles = [
       gu: "પિતૃ દોષની સમજણ: કારણો, શાસ્ત્રોક્ત ઉપાયો અને સુખ-શાંતિ"
     },
     readTime: "5 min",
-    author: "Jitendrabhai Kantilal Thaker",
+    author: "Shastri Rajeshbhai Joshi",
     date: "July 2026",
     summary: {
       en: "Learn what Pitru Dosha really means according to Hindu scriptures, why honoring departed ancestors brings blessings, and how simple tarpan ceremonies resolve obstacles.",
@@ -72,7 +72,7 @@ In Hindu spiritual tradition, *Pitru Dosha* is not a curse, but an energetic deb
       gu: "શ્રાદ્ધ ક્યારે કરવું જોઈએ? તિથિ, પિતૃ પક્ષ અને અમાસ માર્ગદર્શિકા"
     },
     readTime: "4 min",
-    author: "Jitendrabhai Kantilal Thaker",
+    author: "Shastri Rajeshbhai Joshi",
     date: "June 2026",
     summary: {
       en: "A simple guide to choosing the right Tithi, understanding Pitru Paksha (Bhadrapada), and performing monthly Sarvapitri Amavasya rituals.",

@@ -27,7 +27,7 @@ export const ContactPage = () => {
           <span className="badge-tag">{t('nav_contact')}</span>
           <h2>Connect & Book Your Ceremony</h2>
           <p className="section-subtitle">
-            Get in touch directly with Jitendrabhai Kantilal Thaker for inquiries, shubh muhurat advice, and ceremony bookings.
+            Get in touch directly with Shastri Rajeshbhai Joshi for inquiries, shubh muhurat advice, and ceremony bookings.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export const ContactPage = () => {
             <h3 style={{ color: '#FFF', fontSize: 'clamp(1.2rem, 3.5vw, 1.6rem)', margin: 0 }}>Direct Contact & Mobile Booking</h3>
           </div>
           <p style={{ color: '#E2E8F0', fontSize: '1.05rem', maxWidth: '750px', margin: 0, lineHeight: '1.6' }}>
-            Tap below to call directly, send an email, or start a WhatsApp chat with <strong>Jitendrabhai Kantilal Thaker</strong> right now.
+            Tap below to call directly, send an email, or start a WhatsApp chat with <strong>Shastri Rajeshbhai Joshi</strong> right now.
           </p>
 
           {/* Quick Action Buttons Grid */}
@@ -186,7 +186,7 @@ export const ContactPage = () => {
                   Inquiry Received Successfully!
                 </h4>
                 <p style={{ color: 'var(--text-medium-gray)', lineHeight: '1.7' }}>
-                  Thank you, <strong>{formData.name}</strong>. Jitendrabhai Kantilal Thaker will contact you shortly via phone or email.
+                  Thank you, <strong>{formData.name}</strong>. Shastri Rajeshbhai Joshi will contact you shortly via phone or email.
                 </p>
               </div>
             ) : (
@@ -307,6 +307,25 @@ export const ContactPage = () => {
 
           {/* Official Address & Contact Info Card */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+            {/* OFFICIATING PUJARI PROFILE CARD */}
+            <div className="card" style={{ padding: '1.8rem', display: 'flex', gap: '1.4rem', alignItems: 'center', flexWrap: 'wrap', backgroundColor: 'var(--bg-warm-cream)', border: '2px solid var(--accent-gold)' }}>
+              <div style={{ width: '110px', height: '110px', borderRadius: '50%', overflow: 'hidden', border: '3px solid var(--accent-gold)', flexShrink: 0, boxShadow: 'var(--shadow-md)' }}>
+                <img 
+                  src="/images/shastrijii's image.jpeg" 
+                  alt="Shastri Rajeshbhai Joshi" 
+                  className="img-fade-in"
+                  loading="lazy"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                />
+              </div>
+              <div>
+                <span className="badge-tag badge-tag-saffron" style={{ fontSize: '0.75rem', marginBottom: '0.3rem' }}>HEAD VEDIC PUJARI</span>
+                <h4 style={{ fontSize: '1.35rem', color: 'var(--secondary-maroon)', margin: '0 0 0.2rem 0' }}>Shastri Rajeshbhai Joshi</h4>
+                <p style={{ fontSize: '0.92rem', color: 'var(--primary-saffron)', fontWeight: 700, margin: '0 0 0.4rem 0' }}>35+ Years Hereditary Lineage</p>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-medium-gray)', margin: 0 }}>Pindarak Kshetra, Devbhumi Dwarka, Gujarat</p>
+              </div>
+            </div>
+
             <div className="card" style={{ padding: '2.2rem' }}>
               <h3 style={{ fontSize: '1.5rem', color: 'var(--secondary-maroon)', marginBottom: '1.5rem' }}>
                 Official Contact & Address
@@ -329,7 +348,7 @@ export const ContactPage = () => {
                       fontWeight: 500
                     }}>
                       <div style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--secondary-maroon)', marginBottom: '0.4rem' }}>
-                        Jitendrabhai Kantilal Thaker
+                        Shastri Rajeshbhai Joshi
                       </div>
                       <div><strong>At & Post:</strong> Pindara</div>
                       <div><strong>Via:</strong> Bhatia</div>

@@ -214,6 +214,36 @@ export const BookingWizard = ({ preselectedRitual, onClose }) => {
         {/* Wizard Content Body */}
         <div style={{ padding: '1.5rem 1.25rem' }}>
 
+          {/* Officiating Priest Info Banner */}
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '1rem',
+            padding: '0.85rem 1.25rem',
+            backgroundColor: 'var(--accent-gold-light)',
+            borderRadius: 'var(--radius-lg)',
+            border: '1px solid var(--accent-gold-border)',
+            marginBottom: '1.5rem'
+          }}>
+            <div style={{ width: '46px', height: '46px', borderRadius: '50%', overflow: 'hidden', border: '2px solid var(--accent-gold)', flexShrink: 0, boxShadow: 'var(--shadow-sm)' }}>
+              <img 
+                src="/images/shastrijii's image.jpeg" 
+                alt="Shastri Rajeshbhai Joshi" 
+                className="img-fade-in"
+                loading="lazy"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+              />
+            </div>
+            <div>
+              <div style={{ color: 'var(--secondary-maroon)', fontWeight: 800, fontSize: '0.95rem' }}>
+                Officiated by Head Pujari Shastri Rajeshbhai Joshi
+              </div>
+              <div style={{ fontSize: '0.82rem', color: 'var(--text-medium-gray)' }}>
+                35+ Years Lineage • Pindarak Kshetra Sacred Ceremonies
+              </div>
+            </div>
+          </div>
+
           {/* STEP 1: SELECT RITUAL */}
           {step === 1 && (
             <div>

@@ -137,6 +137,36 @@ export const RitualDetailModal = ({ ritual, onClose, onBookRitual }) => {
             </p>
           </div>
 
+          {/* Officiating Pujari Snippet */}
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '1rem',
+            padding: '1rem 1.25rem',
+            backgroundColor: 'var(--bg-warm-cream)',
+            borderRadius: 'var(--radius-lg)',
+            border: '1px solid var(--accent-gold-border)',
+            marginBottom: '2rem'
+          }}>
+            <div style={{ width: '52px', height: '52px', borderRadius: '50%', overflow: 'hidden', border: '2px solid var(--accent-gold)', flexShrink: 0, boxShadow: 'var(--shadow-sm)' }}>
+              <img 
+                src="/images/shastrijii's image.jpeg" 
+                alt="Shastri Rajeshbhai Joshi" 
+                className="img-fade-in"
+                loading="lazy"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+              />
+            </div>
+            <div>
+              <div style={{ color: 'var(--secondary-maroon)', fontWeight: 800, fontSize: '0.98rem' }}>
+                Officiated by Shastri Rajeshbhai Joshi
+              </div>
+              <div style={{ fontSize: '0.84rem', color: 'var(--primary-saffron)', fontWeight: 600 }}>
+                Head Vedic Pujari • 35+ Years Sacred Lineage at Pindarak Kshetra
+              </div>
+            </div>
+          </div>
+
           {/* Scriptural Significance */}
           <div style={{
             backgroundColor: 'var(--accent-gold-light)',

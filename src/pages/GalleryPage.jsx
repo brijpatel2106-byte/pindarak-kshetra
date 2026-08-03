@@ -143,6 +143,7 @@ export const GalleryPage = ({ onSelectLightbox }) => {
                 <img 
                   src={photo.image} 
                   alt={photo.title} 
+                  className="img-fade-in"
                   loading="lazy"
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
                 />

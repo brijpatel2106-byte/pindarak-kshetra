@@ -283,6 +283,93 @@ export const HomePage = ({ setActivePage, onSelectDetail, onOpenBooking, onSelec
         </div>
       </section>
 
+      {/* SACRED PITRU MOKSHA & PITRU SHANTI PILGRIMAGE SECTION */}
+      <section className="section-padding" style={{
+        background: 'linear-gradient(135deg, var(--secondary-maroon) 0%, #2A080D 100%)',
+        color: '#FFF',
+        position: 'relative',
+        overflow: 'hidden',
+        borderTop: '3px solid var(--accent-gold)',
+        borderBottom: '3px solid var(--accent-gold)'
+      }}>
+        <div className="container">
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))',
+            gap: '3rem',
+            alignItems: 'center'
+          }}>
+            <div>
+              <span className="badge-tag badge-tag-saffron" style={{ marginBottom: '1rem', display: 'inline-flex' }}>
+                Pindarak Kshetra – Pindara
+              </span>
+              
+              <h2 style={{ color: '#FFF', fontSize: 'clamp(1.8rem, 3.8vw, 2.8rem)', marginBottom: '1.2rem', lineHeight: '1.25' }}>
+                The Sacred Pilgrimage for Pitru Moksha & Pitru Shanti
+              </h2>
+
+              <p style={{ color: '#E2E8F0', fontSize: '1.12rem', lineHeight: '1.85', marginBottom: '2.2rem', opacity: 0.95 }}>
+                Pindarak Kshetra is a revered Hindu pilgrimage dedicated to sacred Vedic rituals for Pitru Moksha (liberation of departed souls) and Pitru Shanti (ancestral peace). Devotees from across India visit this holy place to perform authentic Vedic ceremonies according to ancient Vedic traditions.
+              </p>
+
+              <div style={{ display: 'flex', gap: '1.2rem', flexWrap: 'wrap' }}>
+                <button onClick={onOpenBooking} className="btn btn-primary btn-lg">
+                  <Calendar size={20} />
+                  <span>Book Pitru Moksha Vidhi</span>
+                </button>
+                <button onClick={() => setActivePage('services')} className="btn btn-secondary btn-lg" style={{ backgroundColor: 'transparent', color: '#FFF', borderColor: 'var(--accent-gold)' }}>
+                  <span>Explore Ritual Details</span>
+                  <ArrowRight size={20} />
+                </button>
+              </div>
+            </div>
+
+            <div style={{ position: 'relative' }}>
+              <div style={{
+                borderRadius: 'var(--radius-xl)',
+                overflow: 'hidden',
+                boxShadow: '0 20px 50px rgba(0, 0, 0, 0.45)',
+                border: '4px solid var(--accent-gold)',
+                position: 'relative'
+              }}>
+                <img 
+                  src="/images/pitra moksh.jpeg" 
+                  alt="The Sacred Pilgrimage for Pitru Moksha & Pitru Shanti at Pindarak Kshetra" 
+                  className="img-fade-in"
+                  loading="lazy"
+                  style={{ 
+                    width: '100%', 
+                    maxHeight: '460px', 
+                    objectFit: 'cover',
+                    objectPosition: 'center',
+                    display: 'block' 
+                  }} 
+                />
+              </div>
+              <div className="floating-pill" style={{
+                position: 'relative',
+                marginTop: '-1.8rem',
+                marginRight: 'auto',
+                marginLeft: '1.5rem',
+                backgroundColor: 'var(--primary-saffron)',
+                color: '#FFF',
+                padding: '0.8rem 1.4rem',
+                borderRadius: 'var(--radius-full)',
+                boxShadow: '0 10px 25px rgba(216, 67, 21, 0.5)',
+                fontWeight: 700,
+                fontSize: '0.9rem',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.6rem',
+                border: '1px solid var(--accent-gold)'
+              }}>
+                <Sparkles size={18} /> Authentic Ancestral Rites & Tarpan
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* MEET PUJARI */}
       <section className="section-padding" style={{
         background: 'linear-gradient(135deg, #FFF 0%, var(--bg-warm-cream) 50%, var(--bg-light-sand) 100%)',
@@ -303,6 +390,8 @@ export const HomePage = ({ setActivePage, onSelectDetail, onOpenBooking, onSelec
                     <img 
                       src={pujariProfile.image} 
                       alt={getMultilingualText(pujariProfile.name)} 
+                      className="img-fade-in"
+                      loading="lazy"
                       style={{ width: '100%', maxHeight: '480px', objectFit: 'cover' }} 
                     />
                   </div>
@@ -410,7 +499,7 @@ export const HomePage = ({ setActivePage, onSelectDetail, onOpenBooking, onSelec
             Ready to Schedule Your Sacred Ritual?
           </h2>
           <p style={{ color: '#E2E8F0', fontSize: '1.2rem', marginBottom: '2.4rem', lineHeight: '1.8' }}>
-            Connect directly with <strong>Jitendrabhai Kantilal Thaker</strong> and secure your preferred ceremony date with peace of mind.
+            Connect directly with <strong>Shastri Rajeshbhai Joshi</strong> and secure your preferred ceremony date with peace of mind.
           </p>
           <div style={{ display: 'flex', gap: '1.4rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
             <button onClick={onOpenBooking} className="btn btn-primary btn-lg">

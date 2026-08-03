@@ -54,10 +54,10 @@ export const translations = {
     // Meet Pujari Preview
     pujari_title: "Meet the Pujari",
     pujari_subtitle: "Dedicated to preserving sacred traditions and guiding families with compassion.",
-    pujari_name: "Jitendrabhai Kantilal Thaker",
+    pujari_name: "Shastri Rajeshbhai Joshi",
     pujari_role: "Head Pujari & Vedic Astrologer, Pindarak Kshetra",
     pujari_experience: "35+ Years Experience in Pitru Tarpan, Narayan Nagbali, Sarpa Dosha & Vastu Rectification",
-    pujari_bio_short: "Jitendrabhai Kantilal Thaker comes from a revered 7th-generation lineage of Vedic priests at Pindarak Kshetra. He specializes in sacred Pitru rituals, Sarpa Shanti, Vastu remedies, and astrological consultations.",
+    pujari_bio_short: "Shastri Rajeshbhai Joshi comes from a revered 7th-generation lineage of Vedic priests at Pindarak Kshetra. He specializes in sacred Pitru rituals, Sarpa Shanti, Vastu remedies, and astrological consultations.",
     read_full_bio: "Read Full Profile & Lineage",
 
     // Booking Wizard
@@ -114,7 +114,7 @@ export const translations = {
 
     // Footer & Contact
     footer_about: "Pindarak Kshetra is dedicated to providing authentic Vedic ceremonies, Pitru Tarpan, Sarpa Dosha Shanti, Vastu remedies, and spiritual guidance for families globally.",
-    contact_address: "Jitendrabhai Kantilal Thaker, At & Post: Pindara, Via: Bhatia, Taluka: Jam Kalyanpur, District: Dev Bhoomi Dwarka, Gujarat – 361315, India",
+    contact_address: "Shastri Rajeshbhai Joshi, At & Post: Pindara, Via: Bhatia, Taluka: Jam Kalyanpur, District: Dev Bhoomi Dwarka, Gujarat – 361315, India",
     contact_phone: "+91 9979626659 / +91 8980333989",
     contact_email: "jthaker511@gmail.com",
     quick_links: "Quick Navigation",
@@ -167,7 +167,7 @@ export const translations = {
     why_1_title: "प्रामाणिक वैदिक परंपरा",
     why_1_desc: "सभी अनुष्ठान शास्त्रों और वंशानुगत वैदिक नियमों के अनुसार संपन्न किए जाते हैं।",
     why_2_title: "अनुभवी गुजराती ब्राह्मण पुजारी",
-    why_2_desc: "शास्त्रों के ज्ञाता जितेन्द्रभाई कांतिलाल ठाकर द्वारा संचालित।",
+    why_2_desc: "शास्त्रों के ज्ञाता शास्त्री राजेशभाई जोशी द्वारा संचालित।",
     why_3_title: "आपकी भाषा में स्पष्ट मार्गदर्शन",
     why_3_desc: "आपकी पसंदीदा भाषा (हिंदी, गुजराती या अंग्रेजी) में हर कदम की सरल व्याख्या।",
     why_4_title: "पारदर्शी और आसान बुकिंग",
@@ -176,10 +176,10 @@ export const translations = {
     // Meet Pujari Preview
     pujari_title: "पुजारी जी का परिचय",
     pujari_subtitle: "पवित्र वैदिक परंपराओं के संरक्षण और परिवारों के कल्याण के लिए समर्पित।",
-    pujari_name: "शास्त्री श्री जितेन्द्रभाई कांतिलाल ठाकर",
+    pujari_name: "शास्त्री श्री राजेशभाई जोशी",
     pujari_role: "प्रधान पुजारी एवं वैदिक ज्योतिषाचार्य, पिंडारक क्षेत्र",
     pujari_experience: "पितृ तर्पण, नारायण नागबलि, सर्प दोष शांति एवं वास्तु दोष निवारण में 35+ वर्षों का अनुभव",
-    pujari_bio_short: "जितेन्द्रभाई कांतिलाल ठाकर पिंडारक क्षेत्र के सम्मानित 7वीं पीढ़ी के वैदिक पुजारी घराने से हैं। वे पितृ कर्म, नागबलि, वास्तु उपाय और ज्योतिषीय परामर्श में सिद्धहस्त हैं।",
+    pujari_bio_short: "शास्त्री राजेशभाई जोशी पिंडारक क्षेत्र के सम्मानित 7वीं पीढ़ी के वैदिक पुजारी घराने से हैं। वे पितृ कर्म, नागबलि, वास्तु उपाय और ज्योतिषीय परामर्श में सिद्धहस्त हैं।",
     read_full_bio: "पूरा जीवन परिचय देखें",
 
     // Booking Wizard
@@ -236,7 +236,7 @@ export const translations = {
 
     // Footer & Contact
     footer_about: "पिंडारक क्षेत्र विश्वभर के हिंदू परिवारों के लिए प्रामाणिक वैदिक पूजा, पितृ तर्पण और शास्त्रीय मार्गदर्शन प्रदान करने हेतु समर्पित है।",
-    contact_address: "जितेन्द्रभाई कांतिलाल ठाकर, अत् & पोस्ट: पिंडारा, वाया: भाटिया, तालुका: जाम कल्याणपुर, जिला: देवभूमि द्वारका, गुजरात – 361315, भारत",
+    contact_address: "शास्त्री राजेशभाई जोशी, अत् & पोस्ट: पिंडारा, वाया: भाटिया, तालुका: जाम कल्याणपुर, जिला: देवभूमि द्वारका, गुजरात – 361315, भारत",
     contact_phone: "+91 9979626659 / +91 8980333989",
     contact_email: "jthaker511@gmail.com",
     quick_links: "त्वरित नेविगेशन",
@@ -289,7 +289,7 @@ export const translations = {
     why_1_title: "પ્રામાણિક વૈદિક પરંપરા",
     why_1_desc: "તમામ વિધિઓ શાસ્ત્રોક્ત નિયમો અને કૌટુંબિક પરંપરા અનુસાર કરવામાં આવે છે.",
     why_2_title: "અનુભવી ગુજરાતી બ્રાહ્મણ પૂજારી",
-    why_2_desc: "શાસ્ત્રી શ્રી જિતેન્દ્રભાઈ કાંતિલાલ ઠાકર દ્વારા સંપૂર્ણ માર્ગદર્શન.",
+    why_2_desc: "શાસ્ત્રી શ્રી રાજેશભાઈ જોશી દ્વારા સંપૂર્ણ માર્ગદર્શન.",
     why_3_title: "તમારી ભાષામાં સ્પષ્ટ માર્ગદર્શન",
     why_3_desc: "તમારી પસંદગીની ભાષા (ગુજરાતી, હિન્દી અથવા અંગ્રેજી) માં વિધિની સરળ સમજણ.",
     why_4_title: "પારદર્શક અને સરળ બુકિંગ",
@@ -298,10 +298,10 @@ export const translations = {
     // Meet Pujari Preview
     pujari_title: "પૂજારીજી નો પરિચય",
     pujari_subtitle: "પવિત્ર પરંપરાઓના જતન અને પરિવારોના કલ્યાણ માટે સમર્પિત.",
-    pujari_name: "શાસ્ત્રી શ્રી જિતેન્દ્રભાઈ કાંતિલાલ ઠાકર",
+    pujari_name: "શાસ્ત્રી શ્રી રાજેશભાઈ જોશી",
     pujari_role: "મુખ્ય પૂજારી અને વૈદિક જ્યોતિષાચાર્ય, પિંડારક ક્ષેત્ર",
     pujari_experience: "પિતૃ તર્પણ, નારાયણ નાગબલી, સર્પ દોષ શાંતિ અને વાસ્તુ વિધિમાં ૩૫+ વર્ષનો અનુભવ",
-    pujari_bio_short: "જિતેન્દ્રભાઈ કાંતિલાલ ઠાકર પિંડારક ક્ષેત્રના ૭મી પેઢીના પવિત્ર વૈદિક પરિવારમાંથી આવે છે. તેઓ પિતૃ વિધિ, વાસ્તુ દોષ નિવારણ અને જ્યોતિષીય સલાહમાં નિષ્ણાત છે.",
+    pujari_bio_short: "શાસ્ત્રી રાજેશભાઈ જોશી પિંડારક ક્ષેત્રના ૭મી પેઢીના પવિત્ર વૈદિક પરિવારમાંથી આવે છે. તેઓ પિતૃ વિધિ, વાસ્તુ દોષ નિવારણ અને જ્યોતિષીય સલાહમાં નિષ્ણાત છે.",
     read_full_bio: "સંપૂર્ણ પરિચય વાંચો",
 
     // Booking Wizard
@@ -358,7 +358,7 @@ export const translations = {
 
     // Footer & Contact
     footer_about: "પિંડારક ક્ષેત્ર વિશ્વભરના શ્રદ્ધાળુઓ માટે પ્રામાણિક વૈદિક પૂજા અને પિતૃ તર્પણ સેવાઓ પૂરી પાડે છે.",
-    contact_address: "જિતેન્દ્રભાઈ કાંતિલાલ ઠાકર, મુ. પો.: પિંડારા, વાયા: ભાટિયા, તાલુકો: જામ કલ્યાણપુર, જિલ્લો: દેવભૂમિ દ્વારકા, ગુજરાત – ૩૬૧૩૧૫, ભારત",
+    contact_address: "શાસ્ત્રી રાજેશભાઈ જોશી, મુ. પો.: પિંડારા, વાયા: ભાટિયા, તાલુકો: જામ કલ્યાણપુર, જિલ્લો: દેવભૂમિ દ્વારકા, ગુજરાત – ૩૬૧૩૧૫, ભારત",
     contact_phone: "+91 9979626659 / +91 8980333989",
     contact_email: "jthaker511@gmail.com",
     quick_links: "ઝડપી નેવિગેશન",

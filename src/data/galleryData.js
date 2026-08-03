@@ -6,7 +6,16 @@ export const galleryCategories = [
 ];
 
 export const galleryPhotos = [
-  // 3 NEW ORIGINAL CEREMONY PHOTOS PLACED FIRST
+  // PITRU MOKSHA OFFICIAL FEATURE PHOTO
+  {
+    id: "g_pitru_moksha",
+    category: "tarpan",
+    title: "The Sacred Pilgrimage for Pitru Moksha & Pitru Shanti",
+    image: "/images/pitra moksh.jpeg",
+    caption: "Pindarak Kshetra is a revered Hindu pilgrimage dedicated to sacred Vedic rituals for Pitru Moksha (liberation of departed souls) and Pitru Shanti (ancestral peace)."
+  },
+
+  // 3 ORIGINAL CEREMONY PHOTOS PLACED NEXT
   {
     id: "g_new1",
     category: "ceremonies",
@@ -17,9 +26,9 @@ export const galleryPhotos = [
   {
     id: "g_new2",
     category: "ceremonies",
-    title: "Shastri Ji Guiding Sacred Mantra Vidhi",
-    image: "/images/ceremony_photo_2.jpg",
-    caption: "Jitendrabhai Kantilal Thaker guiding devotees through sacred Vedic mantra recitations and offerings."
+    title: "Shastri Rajeshbhai Joshi Guiding Sacred Vidhi",
+    image: "/images/shastrijii's image.jpeg",
+    caption: "Shastri Rajeshbhai Joshi guiding devotees through sacred Vedic mantra recitations and offerings."
   },
   {
     id: "g_new3",
@@ -34,7 +43,7 @@ export const galleryPhotos = [
     id: "g1",
     category: "tarpan",
     title: "Narayan Nagbali & Pitru Moksha Vidhi",
-    image: "/images/narayan_nagbali.jpg?v=2",
+    image: "/images/pitra moksh.jpeg",
     caption: "Authentic 3-day Narayan Nagbali ceremony performed at Pindarak Kshetra for ancestral liberation and family harmony."
   },
   {
@@ -63,7 +72,7 @@ export const galleryPhotos = [
     category: "temple",
     title: "Vedic Horoscope & Muhurat Consultation",
     image: "/images/consultant.jpg?v=2",
-    caption: "Jitendrabhai Kantilal Thaker analyzing birth horoscopes, planetary Mahadasha remedies, and Shubh Muhurats."
+    caption: "Shastri Rajeshbhai Joshi analyzing birth horoscopes, planetary Mahadasha remedies, and Shubh Muhurats."
   },
   {
     id: "g6",
@@ -75,9 +84,9 @@ export const galleryPhotos = [
   {
     id: "g7",
     category: "temple",
-    title: "Jitendrabhai Kantilal Thaker",
-    image: "/images/pujari.png?v=2",
-    caption: "Head Vedic Pujari & Astrologer at Pindarak Kshetra with over 35 years of dedicated spiritual lineage."
+    title: "Shastri Rajeshbhai Joshi",
+    image: "/images/shastrijii's image.jpeg",
+    caption: "Head Vedic Pujari & Astrologer Shastri Rajeshbhai Joshi at Pindarak Kshetra with over 35 years of dedicated spiritual lineage."
   }
 ];
 

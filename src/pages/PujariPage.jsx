@@ -23,6 +23,8 @@ export const PujariPage = ({ onOpenBooking }) => {
                 <img 
                   src={pujariProfile.image} 
                   alt={getMultilingualText(pujariProfile.name)} 
+                  className="img-fade-in"
+                  loading="lazy"
                   style={{ width: '100%', maxHeight: '480px', objectFit: 'cover' }} 
                 />
               </div>
