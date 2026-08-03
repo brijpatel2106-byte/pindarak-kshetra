@@ -192,9 +192,9 @@ export const ritualsData = [
       gu: "વૈદિક કુંડળી વિશ્લેષણ અને મુહૂર્ત સલાહ"
     },
     shortSummary: {
-      en: "Personalized 1-on-1 guidance by Shastri Rajeshbhai Joshi analyzing horoscopes, doshas, and auspicious dates.",
-      hi: "शास्त्री राजेशभाई जोशी द्वारा कुंडली, दोष निवारण और शुभ मुहूर्त हेतु व्यक्तिगत परामर्श।",
-      gu: "શાસ્ત્રી રાજેશભાઈ જોશી દ્વારા કુંડળી, દોષ અને શુભ મુહૂર્ત માટે પર્સનલ સલાહ."
+      en: "Personalized 1-on-1 guidance by Shastri Jitubhai Thaker analyzing horoscopes, doshas, and auspicious dates.",
+      hi: "शास्त्री जितुभाई ठाकर द्वारा कुंडली, दोष निवारण और शुभ मुहूर्त हेतु व्यक्तिगत परामर्श।",
+      gu: "શાસ્ત્રી જિતુભાઈ ઠાકર દ્વારા કુંડળી, દોષ અને શુભ મુહૂર્ત માટે પર્સનલ સલાહ."
     },
     duration: "45 Minutes (Phone / Video / In-Person)",
     locationOptions: ["Online Video Call", "Phone Call", "In-Person Temple Visit"],

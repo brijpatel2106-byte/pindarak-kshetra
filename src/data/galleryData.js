@@ -26,9 +26,9 @@ export const galleryPhotos = [
   {
     id: "g_new2",
     category: "ceremonies",
-    title: "Shastri Rajeshbhai Joshi Guiding Sacred Vidhi",
+    title: "Shastri Jitubhai Thaker Guiding Sacred Vidhi",
     image: "/images/shastrijii's image.jpeg",
-    caption: "Shastri Rajeshbhai Joshi guiding devotees through sacred Vedic mantra recitations and offerings."
+    caption: "Shastri Jitubhai Thaker guiding devotees through sacred Vedic mantra recitations and offerings."
   },
   {
     id: "g_new3",
@@ -72,7 +72,7 @@ export const galleryPhotos = [
     category: "temple",
     title: "Vedic Horoscope & Muhurat Consultation",
     image: "/images/consultant.jpg?v=2",
-    caption: "Shastri Rajeshbhai Joshi analyzing birth horoscopes, planetary Mahadasha remedies, and Shubh Muhurats."
+    caption: "Shastri Jitubhai Thaker analyzing birth horoscopes, planetary Mahadasha remedies, and Shubh Muhurats."
   },
   {
     id: "g6",
@@ -84,9 +84,9 @@ export const galleryPhotos = [
   {
     id: "g7",
     category: "temple",
-    title: "Shastri Rajeshbhai Joshi",
+    title: "Shastri Jitubhai Thaker",
     image: "/images/shastrijii's image.jpeg",
-    caption: "Head Vedic Pujari & Astrologer Shastri Rajeshbhai Joshi at Pindarak Kshetra with over 35 years of dedicated spiritual lineage."
+    caption: "Head Vedic Pujari & Astrologer Shastri Jitubhai Thaker at Pindarak Kshetra with over 35 years of dedicated spiritual lineage."
   }
 ];
 

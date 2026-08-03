@@ -499,7 +499,7 @@ export const HomePage = ({ setActivePage, onSelectDetail, onOpenBooking, onSelec
             Ready to Schedule Your Sacred Ritual?
           </h2>
           <p style={{ color: '#E2E8F0', fontSize: '1.2rem', marginBottom: '2.4rem', lineHeight: '1.8' }}>
-            Connect directly with <strong>Shastri Rajeshbhai Joshi</strong> and secure your preferred ceremony date with peace of mind.
+            Connect directly with <strong>Shastri Jitubhai Thaker</strong> and secure your preferred ceremony date with peace of mind.
           </p>
           <div style={{ display: 'flex', gap: '1.4rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
             <button onClick={onOpenBooking} className="btn btn-primary btn-lg">

@@ -136,7 +136,7 @@ export const AboutPage = ({ onOpenBooking }) => {
 
         <div style={{ textAlign: 'center' }}>
           <button onClick={onOpenBooking} className="btn btn-primary btn-lg">
-            Schedule a Ritual with Shastri Rajeshbhai Joshi
+            Schedule a Ritual with Shastri Jitubhai Thaker
           </button>
         </div>
       </div>

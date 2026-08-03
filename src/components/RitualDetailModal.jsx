@@ -151,7 +151,7 @@ export const RitualDetailModal = ({ ritual, onClose, onBookRitual }) => {
             <div style={{ width: '52px', height: '52px', borderRadius: '50%', overflow: 'hidden', border: '2px solid var(--accent-gold)', flexShrink: 0, boxShadow: 'var(--shadow-sm)' }}>
               <img 
                 src="/images/shastrijii's image.jpeg" 
-                alt="Shastri Rajeshbhai Joshi" 
+                alt="Shastri Jitubhai Thaker" 
                 className="img-fade-in"
                 loading="lazy"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
@@ -159,7 +159,7 @@ export const RitualDetailModal = ({ ritual, onClose, onBookRitual }) => {
             </div>
             <div>
               <div style={{ color: 'var(--secondary-maroon)', fontWeight: 800, fontSize: '0.98rem' }}>
-                Officiated by Shastri Rajeshbhai Joshi
+                Officiated by Shastri Jitubhai Thaker
               </div>
               <div style={{ fontSize: '0.84rem', color: 'var(--primary-saffron)', fontWeight: 600 }}>
                 Head Vedic Pujari • 35+ Years Sacred Lineage at Pindarak Kshetra

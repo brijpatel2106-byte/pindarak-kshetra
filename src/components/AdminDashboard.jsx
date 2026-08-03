@@ -60,7 +60,7 @@ export const AdminDashboard = ({ onClose }) => {
             <div style={{ width: '44px', height: '44px', borderRadius: '50%', overflow: 'hidden', border: '2px solid var(--accent-gold)', flexShrink: 0, boxShadow: 'var(--shadow-sm)' }}>
               <img 
                 src="/images/shastrijii's image.jpeg" 
-                alt="Shastri Rajeshbhai Joshi" 
+                alt="Shastri Jitubhai Thaker" 
                 className="img-fade-in"
                 loading="lazy"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
@@ -68,7 +68,7 @@ export const AdminDashboard = ({ onClose }) => {
             </div>
             <div>
               <h2 style={{ color: '#FFF', fontSize: 'clamp(1.1rem, 3.5vw, 1.6rem)', margin: 0 }}>Pujari Admin Dashboard</h2>
-              <span style={{ fontSize: '0.8rem', color: 'var(--accent-gold)' }}>Shastri Rajeshbhai Joshi • Pindarak Kshetra</span>
+              <span style={{ fontSize: '0.8rem', color: 'var(--accent-gold)' }}>Shastri Jitubhai Thaker • Pindarak Kshetra</span>
             </div>
           </div>
 
