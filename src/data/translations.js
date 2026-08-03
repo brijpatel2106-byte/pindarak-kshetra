@@ -1,5 +1,7 @@
 export const translations = {
   en: {
+    site_name: "Pindarak Kshetra",
+    site_title: "Pindarak Kshetra — Official Digital Booking Platform & Sacred Rituals",
     // Navigation & Header
     nav_home: "Home",
     nav_about: "About",
@@ -122,6 +124,8 @@ export const translations = {
   },
 
   hi: {
+    site_name: "पिंडारक क्षेत्र",
+    site_title: "पिंडारक क्षेत्र — आधिकारिक डिजिटल बुकिंग प्लेटफॉर्म एवं वैदिक अनुष्ठान",
     // Navigation & Header
     nav_home: "मुख्य पृष्ठ",
     nav_about: "हमारे बारे में",
@@ -244,6 +248,8 @@ export const translations = {
   },
 
   gu: {
+    site_name: "પિંડારક ક્ષેત્ર",
+    site_title: "પિંડારક ક્ષેત્ર — અધિકૃત ડિજિટલ બુકિંગ મંચ અને પવિત્ર વિધિઓ",
     // Navigation & Header
     nav_home: "મુખ્ય પૃષ્ઠ",
     nav_about: "અમારા વિશે",

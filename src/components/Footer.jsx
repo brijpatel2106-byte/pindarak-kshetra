@@ -40,7 +40,7 @@ export const Footer = ({ setActivePage, onOpenBooking }) => {
               }}>
                 <Flame size={22} />
               </div>
-              <h3 style={{ color: '#FFF', fontSize: '1.4rem' }}>Pindarak Kshetra</h3>
+              <h3 style={{ color: '#FFF', fontSize: '1.4rem' }}>{t('site_name')}</h3>
             </div>
             <p style={{ color: '#E2E8F0', fontSize: '0.95rem', lineHeight: '1.7', marginBottom: '1.5rem' }}>
               {t('footer_about')}
@@ -162,7 +162,7 @@ export const Footer = ({ setActivePage, onOpenBooking }) => {
           fontSize: '0.9rem'
         }}>
           <div>
-            © {new Date().getFullYear()} Pindarak Kshetra. {t('all_rights')}
+            © {new Date().getFullYear()} {t('site_name')}. {t('all_rights')}
           </div>
           <div style={{ display: 'flex', gap: '1.5rem' }}>
             <span>Privacy Policy</span>

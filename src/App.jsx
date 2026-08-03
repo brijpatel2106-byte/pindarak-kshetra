@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { LanguageProvider } from './context/LanguageContext';
+import React, { useState, useEffect } from 'react';
+import { LanguageProvider, useLanguage } from './context/LanguageContext';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { RitualDetailModal } from './components/RitualDetailModal';
@@ -14,9 +14,15 @@ import { GalleryPage } from './pages/GalleryPage';
 import { ContactPage } from './pages/ContactPage';
 
 function AppContent() {
+  const { lang, t } = useLanguage();
   const [activePage, setActivePage] = useState('home');
   const [detailRitual, setDetailRitual] = useState(null);
   const [lightboxItem, setLightboxItem] = useState(null);
+
+  useEffect(() => {
+    document.title = t('site_title');
+    document.documentElement.lang = lang;
+  }, [lang, t]);
 
   const handleOpenBooking = () => {
     setActivePage('contact');

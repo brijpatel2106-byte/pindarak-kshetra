@@ -27,7 +27,7 @@ export const Header = ({ activePage, setActivePage, onOpenBooking }) => {
             <Flame size={24} />
           </div>
           <div className="brand-text">
-            <h1>Pindarak Kshetra</h1>
+            <h1>{t('site_name')}</h1>
           </div>
         </a>
 
