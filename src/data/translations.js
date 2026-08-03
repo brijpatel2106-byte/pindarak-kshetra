@@ -1,7 +1,8 @@
 export const translations = {
   en: {
-    site_name: "Pindarak Kshetra",
-    site_title: "Pindarak Kshetra — Official Digital Booking Platform & Sacred Rituals",
+    site_name: "The Sacred Pilgrimage for Pitru Moksha & Pitru Shanti",
+    site_subtitle: "Pindarak Kshetra – Pindara",
+    site_title: "The Sacred Pilgrimage for Pitru Moksha & Pitru Shanti | Pindarak Kshetra – Pindara",
     // Navigation & Header
     nav_home: "Home",
     nav_about: "About",
@@ -124,8 +125,9 @@ export const translations = {
   },
 
   hi: {
-    site_name: "पिंडारक क्षेत्र",
-    site_title: "पिंडारक क्षेत्र — आधिकारिक डिजिटल बुकिंग प्लेटफॉर्म एवं वैदिक अनुष्ठान",
+    site_name: "पितृ मोक्ष एवं पितृ शांति का सर्वोत्तम तीर्थ",
+    site_subtitle: "पिंडारक क्षेत्र – पिंडारा",
+    site_title: "पितृ मोक्ष एवं पितृ शांति का सर्वोत्तम तीर्थ | पिंडारक क्षेत्र – पिंडारा",
     // Navigation & Header
     nav_home: "मुख्य पृष्ठ",
     nav_about: "हमारे बारे में",
@@ -248,8 +250,9 @@ export const translations = {
   },
 
   gu: {
-    site_name: "પિંડારક ક્ષેત્ર",
-    site_title: "પિંડારક ક્ષેત્ર — અધિકૃત ડિજિટલ બુકિંગ મંચ અને પવિત્ર વિધિઓ",
+    site_name: "પિતૃ મોક્ષ અને પિતૃ શાંતિનું સર્વોત્તમ તીર્થ",
+    site_subtitle: "પિંડારક ક્ષેત્ર – પિંડારા",
+    site_title: "પિતૃ મોક્ષ અને પિતૃ શાંતિનું સર્વોત્તમ તીર્થ | પિંડારક ક્ષેત્ર – પિંડારા",
     // Navigation & Header
     nav_home: "મુખ્ય પૃષ્ઠ",
     nav_about: "અમારા વિશે",

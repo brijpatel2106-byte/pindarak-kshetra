@@ -24,10 +24,11 @@ export const Header = ({ activePage, setActivePage, onOpenBooking }) => {
         {/* Brand Logo */}
         <a href="#home" onClick={(e) => { e.preventDefault(); handleNavClick('home'); }} className="brand-logo">
           <div className="brand-icon">
-            <Flame size={24} />
+            <Flame size={22} />
           </div>
           <div className="brand-text">
-            <h1>{t('site_name')}</h1>
+            <h1 className="brand-title">{t('site_name')}</h1>
+            <span className="brand-subtitle">{t('site_subtitle')}</span>
           </div>
         </a>
 
