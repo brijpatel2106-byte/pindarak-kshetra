@@ -31,7 +31,7 @@ export const translations = {
     trust_rituals_desc: "Rituals Conducted",
     trust_families: "900+",
     trust_families_desc: "Families Blessed",
-    trust_families_subtext: "A sacred pilgrimage believed to predate Treta Yuga and revered since ancient times.",
+    trust_families_subtext: "A sacred pilgrimage believed to predate Satya Yuga and revered since ancient times.",
     trust_languages: "3 Languages",
     trust_languages_desc: "EN, HI, GU Guided",
 
@@ -157,7 +157,7 @@ export const translations = {
     trust_rituals_desc: "संपन्न अनुष्ठान",
     trust_families: "900+",
     trust_families_desc: "संतुष्ट परिवार",
-    trust_families_subtext: "मान्यता है कि यह पवित्र तीर्थ त्रेता युग तथा अन्य सभी युगों से भी अधिक प्राचीन है।",
+    trust_families_subtext: "मान्यता है कि यह पवित्र तीर्थ सत्य युग तथा अन्य सभी युगों से भी अधिक प्राचीन है।",
     trust_languages: "3 भाषाएँ",
     trust_languages_desc: "हिंदी, गुजराती व अंग्रेजी मार्गदर्शन",
 
@@ -283,7 +283,7 @@ export const translations = {
     trust_rituals_desc: "સંપન્ન પૂજાઓ",
     trust_families: "૯૦૦+",
     trust_families_desc: "સંતુષ્ટ પરિવારો",
-    trust_families_subtext: "આ તીર્થ ત્રેતાયુગ અને તમામ યુગોથી પણ પ્રાચીન અને પવિત્ર માનવામાં આવે છે.",
+    trust_families_subtext: "આ તીર્થ સત્યયુગ અને તમામ યુગોથી પણ પ્રાચીન અને પવિત્ર માનવામાં આવે છે।",
     trust_languages: "૩ ભાષાઓ",
     trust_languages_desc: "ગુજરાતી, હિન્દી અને અંગ્રેજી માર્ગદર્શન",
 
