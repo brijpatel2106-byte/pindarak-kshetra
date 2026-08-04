@@ -20,7 +20,8 @@ export const TrustBar = () => {
     {
       icon: <Users size={28} className="text-saffron" />,
       title: t('trust_families'),
-      desc: t('trust_families_desc')
+      desc: t('trust_families_desc'),
+      subtext: t('trust_families_subtext')
     },
     {
       icon: <Languages size={28} className="text-saffron" />,
@@ -39,14 +40,14 @@ export const TrustBar = () => {
       <div className="container">
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))',
           gap: '1.2rem',
-          alignItems: 'center'
+          alignItems: 'stretch'
         }}>
           {metrics.map((m, idx) => (
             <div key={idx} style={{
               display: 'flex',
-              alignItems: 'center',
+              alignItems: 'flex-start',
               gap: '1.2rem',
               padding: '1rem',
               borderRadius: 'var(--radius-md)',
@@ -66,7 +67,7 @@ export const TrustBar = () => {
               }}>
                 {m.icon}
               </div>
-              <div>
+              <div style={{ flex: 1 }}>
                 <div style={{
                   fontFamily: 'var(--font-heading)',
                   fontSize: '1.4rem',
@@ -84,6 +85,19 @@ export const TrustBar = () => {
                 }}>
                   {m.desc}
                 </div>
+                {m.subtext && (
+                  <div style={{
+                    fontSize: '0.78rem',
+                    color: 'var(--secondary-maroon)',
+                    fontWeight: 500,
+                    marginTop: '0.4rem',
+                    lineHeight: '1.35',
+                    borderTop: '1px dashed var(--border-subtle)',
+                    paddingTop: '0.35rem'
+                  }}>
+                    {m.subtext}
+                  </div>
+                )}
               </div>
             </div>
           ))}
